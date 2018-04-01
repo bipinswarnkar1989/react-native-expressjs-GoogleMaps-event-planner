@@ -1,4 +1,4 @@
-import Login from '../components/Login';
+import App from '../components/App';
 import { connect } from 'react-redux';
 import { NavigationActions } from 'react-navigation';
 

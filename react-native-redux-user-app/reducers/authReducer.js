@@ -1,6 +1,6 @@
 const initialAuthState = { isLoggedIn: false };
 
-const authReucer = (state = initialAuthState, action) => {
+const authReducer = (state = initialAuthState, action) => {
   switch (action.type) {
     case 'Login':
       return { ...state, isLoggedIn: true };

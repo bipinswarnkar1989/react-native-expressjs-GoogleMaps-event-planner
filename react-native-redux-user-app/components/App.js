@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import {  View, Text, } from 'react-native';
+import {  View } from 'react-native';
+import {
+  Button,
+  Container,
+  Content,
+  Text
+} from 'native-base';
+import AppContainer from './AppContainer';
 
 export default class App extends Component {
   navigate(screen){
@@ -7,13 +14,15 @@ export default class App extends Component {
   }
   render() {
     return (
-      <View>
+      <AppContainer>
+      <View style={{flex:1}}>
         <Text> App.js </Text>
         <Button
         onPress={() => this.navigate('Login')}
-        title="Login"
-      />
+      ><Text>Login</Text>
+      </Button>
       </View>
+      </AppContainer>
     );
   }
 }

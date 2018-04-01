@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import {  View, Text, Button } from 'react-native';
+import {  View } from 'react-native';
+import {
+  Button,
+  Text
+} from 'native-base';
+import AppContainer from './AppContainer';
 
 export default class Login extends Component {
   navigate(screen){
@@ -7,13 +12,14 @@ export default class Login extends Component {
   }
   render() {
     return (
-      <View>
-        <Text> Login.js </Text>
-        <Button
+      <AppContainer>
+       <View>
+        <Button block success
         onPress={() => this.navigate('App')}
-        title="App"
-      />
-      </View>
+      ><Text>App</Text>
+      </Button>
+          </View>
+      </AppContainer>
     );
   }
 }
