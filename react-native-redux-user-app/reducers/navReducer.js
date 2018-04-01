@@ -5,7 +5,7 @@ import { AppNavigator } from '../components/AppNavigator';
 //Start with two routes: The Main screen, with the Login screen on top.
 const firstAction = AppNavigator.router.getActionForPathAndParams('App');
 const tempNavState = AppNavigator.router.getStateForAction(firstAction);
-const secondAction = AppNavigator.router.getActionForPathAndParams('Home');
+const secondAction = AppNavigator.router.getActionForPathAndParams('Login');
 const initialNavState = AppNavigator.router.getStateForAction(
   secondAction,
   tempNavState
@@ -20,9 +20,9 @@ const navReducer = (state = initialNavState, action) => {
         state
       );
       break;
-    case 'Home':
+    case 'Login':
       nextState = AppNavigator.router.getStateForAction(
-        NavigationActions.navigate({ routeName: 'Home' }),
+        NavigationActions.navigate({ routeName: 'Login' }),
         state
       );
       break;
