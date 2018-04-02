@@ -78,7 +78,7 @@ export default class Register extends Component {
           />
           <Button block success
         onPress={() => this.signUp.bind(this)}
-      ><Text>Sign In</Text>
+      ><Text>Sign Up</Text>
       </Button>
          </View>
        </View>
@@ -95,6 +95,10 @@ export default class Register extends Component {
      </AppContainer>
     );
   }
+}
+
+Register.navigationOptions =  {
+  drawerLockMode: 'locked-closed'
 }
 
 const styles = StyleSheet.create({

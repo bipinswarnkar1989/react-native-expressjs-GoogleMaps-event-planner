@@ -73,6 +73,10 @@ export default class Login extends Component {
   }
 }
 
+Login.navigationOptions =  {
+  drawerLockMode: 'locked-closed'
+}
+
 const styles = StyleSheet.create({
   container:{
     flex:1,
