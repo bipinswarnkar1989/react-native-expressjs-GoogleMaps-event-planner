@@ -1,0 +1,28 @@
+{
+  "name": "user-expressjs-mongodb-server",
+  "version": "1.0.0",
+  "description": "ExpressJs Server for handling server side logic for react-native app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bipinswarnkar1989/react-native-expressjs-GoogleMaps-event-planner.git"
+  },
+  "keywords": [
+    "expressjs",
+    "react-native",
+    "crud-app",
+    "eventPlanner"
+  ],
+  "author": "Bipin Swarnkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bipinswarnkar1989/react-native-expressjs-GoogleMaps-event-planner/issues"
+  },
+  "homepage": "https://github.com/bipinswarnkar1989/react-native-expressjs-GoogleMaps-event-planner#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

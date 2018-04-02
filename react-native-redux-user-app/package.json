@@ -2,6 +2,22 @@
   "name": "react-native-redux-user-app",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bipinswarnkar1989/react-native-expressjs-GoogleMaps-event-planner.git"
+  },
+  "keywords": [
+    "expressjs",
+    "react-native",
+    "crud-app",
+    "eventPlanner"
+  ],
+  "author": "Bipin Swarnkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bipinswarnkar1989/react-native-expressjs-GoogleMaps-event-planner/issues"
+  },
+  "homepage": "https://github.com/bipinswarnkar1989/react-native-expressjs-GoogleMaps-event-planner#readme",
   "devDependencies": {
     "jest-expo": "26.0.0",
     "react-native-scripts": "1.13.1",
