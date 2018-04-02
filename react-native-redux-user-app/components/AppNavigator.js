@@ -5,6 +5,7 @@ import { addNavigationHelpers, StackNavigator, DrawerNavigator } from 'react-nav
 import PropTypes from 'prop-types';
 import App from '../containers/App';
 import Login from '../containers/Login';
+import Register from '../containers/Register';
 import SideBar from "./SideBar.js";
 import {
     StyleSheet,
@@ -22,6 +23,7 @@ import { addListener } from '../utils/redux';
 export const AppNavigator = DrawerNavigator({
   App: { screen: App },
   Login: { screen: Login },
+  Register: { screen: Register },
   
 },{
   initialRouteName: 'App',

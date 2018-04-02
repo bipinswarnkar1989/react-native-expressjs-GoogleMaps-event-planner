@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 
 const Button = ({ title, onPress, isLoading}) => (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => onPress()}>
        <View style={styles.button}>
       <Text style={[styles.buttonText]}>{title}</Text>
       {

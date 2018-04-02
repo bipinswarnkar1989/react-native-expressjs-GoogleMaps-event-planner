@@ -26,6 +26,13 @@ const navReducer = (state = initialNavState, action) => {
         state
       );
       break;
+    
+    case 'Register':
+    nextState = AppNavigator.router.getStateForAction(
+      NavigationActions.navigate({ routeName: 'Register' }),
+      state
+    );
+    break;
     default:
       nextState = AppNavigator.router.getStateForAction(action, state);
       break;

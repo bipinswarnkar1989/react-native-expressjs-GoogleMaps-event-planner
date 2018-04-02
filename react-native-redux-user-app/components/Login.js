@@ -12,7 +12,7 @@ export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
+      email: '',
       password: '',
       accessCode: ''
     }
@@ -40,14 +40,15 @@ export default class Login extends Component {
        <View style={styles.inputContainer}>
        <Input
             placeholder="Email"
-            type='username'
-            onChangeText={this.onChangeText}
+            type='email'
+            onChangeText={this.onChangeText.bind(this)}
             value={this.state.username}
+            autoFocus={true}
           />
           <Input
             placeholder="Password"
             type='password'
-            onChangeText={this.onChangeText}
+            onChangeText={this.onChangeText.bind(this)}
             value={this.state.password}
             secureTextEntry
           />
