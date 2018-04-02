@@ -66,6 +66,11 @@ export default class Login extends Component {
           title='Sign Up'
           onPress={() => this.navigate('Register')}
         /> 
+        <ButtonComp
+          isLoading={false}
+          title='Home'
+          onPress={() => this.navigate('Home')}
+        /> 
         </View>
           </View>
       </AppContainer>

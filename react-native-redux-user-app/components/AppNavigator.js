@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import App from '../containers/App';
 import Login from '../containers/Login';
 import Register from '../containers/Register';
+import Home from '../containers/Home';
 import SideBar from "./SideBar.js";
 import {
     StyleSheet,
@@ -24,6 +25,7 @@ export const AppNavigator = DrawerNavigator({
   App: { screen: App },
   Login: { screen: Login },
   Register: { screen: Register },
+  Home: { screen: Home },
   
 },{
   initialRouteName: 'App',
