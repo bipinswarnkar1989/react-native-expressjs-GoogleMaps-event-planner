@@ -4,7 +4,10 @@
   "description": "ExpressJs Server for handling server side logic for react-native app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel src -d dist",
+    "serve": "node dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +26,6 @@
   },
   "homepage": "https://github.com/bipinswarnkar1989/react-native-expressjs-GoogleMaps-event-planner#readme",
   "dependencies": {
-    "babel-preset-es2015-node": "^6.1.1",
-    "babel-register": "^6.26.0",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "elasticsearch": "^14.2.2",
@@ -34,5 +35,10 @@
     "mongoose": "^5.0.13",
     "morgan": "^1.9.0",
     "multer": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
   }
 }
