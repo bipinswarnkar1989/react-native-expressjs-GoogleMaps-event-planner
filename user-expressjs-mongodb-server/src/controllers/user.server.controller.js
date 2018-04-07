@@ -77,4 +77,34 @@ export  class userController {
                 })
         }
     }
+
+    validateJwt = (req,res,next) => {
+        let token = req.headers['authorization'];
+        if (token) {
+            jwt.verify(token, process.env.SECRET_TOKEN, function(err,result) {
+                if(err){
+                    console.log(err);
+                    return res.json({
+                      success: false,
+                      message: 'Please Log in using a valid email & password'
+                    });
+                  } else {
+                    console.log('Token Validated Successfully: '+ JSON.stringify(result));
+                    req.user = result.user;
+                    next();
+                  }
+            })
+        }
+    }
+
+    getUser = (req,res,next) => {
+        if (req.user) {
+         return res.json({
+           success: true,
+           message: 'Authenticated Successfully',
+           user:req.user
+         });
+        }
+     }
+
 }

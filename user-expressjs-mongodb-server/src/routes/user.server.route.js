@@ -9,6 +9,8 @@ const userRoutes = (app) => {
           .post(userCtrl.createUser);
     router.route('/auth')
           .post(userCtrl.authenticate);
+    router.route('/validate')
+          .get(userCtrl.validateJwt);
     app.use('/api/user', router);
     
 }
