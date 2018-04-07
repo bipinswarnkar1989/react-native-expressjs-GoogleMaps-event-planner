@@ -7,6 +7,8 @@ const userRoutes = (app) => {
     const userCtrl = new userController();
     router.route('/')
           .post(userCtrl.createUser);
+    router.route('/auth')
+          .post(userCtrl.authenticate);
     app.use('/api/user', router);
     
 }

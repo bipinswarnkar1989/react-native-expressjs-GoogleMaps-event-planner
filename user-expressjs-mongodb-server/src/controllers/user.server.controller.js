@@ -2,8 +2,8 @@ import jwt from 'jsonwebtoken';
 import User from '../models/user.server.model';
 export  class userController {
     createUser = (req,res,next) => {
-        console.log('createUser: '+ JSON.stringify(req.body));
        if (req.body) {
+        console.log('createUser: '+ JSON.stringify(req.body));
            var newUser = new User();
            newUser.firstname = req.body.firstname;
            newUser.lastname = req.body.lastname;
@@ -43,5 +43,38 @@ export  class userController {
             algorithm:'HS384'
         });
         return token;
+    }
+
+    authenticate = (req,res,next) => {
+        if (req.body.email && req.body.password) {
+        console.log('authenticate: '+ JSON.stringify(req.body));
+            User.findOne({ email:req.body.email })
+                .exec((err,user) => {
+                    if (user) {
+                        let validPswrd = user.validPassword(req.body.password);
+                        if (validPswrd) {
+                            console.log('Login Success: '+ JSON.stringify(user));
+                            let token = this.generateJwt(user);
+                        return  res.json({
+                            success:true,
+                            message:'Successfully Logged In',
+                            token
+                        });
+                        }else{
+                            console.log('Login Failed.Invalid Password: ');
+                        return  res.json({
+                            success:false,
+                            message:'Login Failed. Invalid Password'
+                        });
+                        }
+                    }else{
+                        console.log('Login Failed.Invalid Email: '+ req.body.email);
+                        return  res.json({
+                            success:false,
+                            message:'Login Failed. Invalid Email'
+                        });
+                    }
+                })
+        }
     }
 }
