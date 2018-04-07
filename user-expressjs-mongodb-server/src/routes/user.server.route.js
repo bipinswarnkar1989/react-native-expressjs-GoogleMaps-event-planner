@@ -7,7 +7,7 @@ const userRoutes = (app) => {
     const userCtrl = new userController();
     router.route('/')
           .post(userCtrl.createUser);
-    app.use('/user', router);
+    app.use('/api/user', router);
     
 }
 
