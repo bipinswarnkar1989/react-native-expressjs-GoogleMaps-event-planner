@@ -20,11 +20,11 @@ export default class Login extends Component {
   }
 
   async componentDidMount(){
-      // apiObj.getToken().then(token => {
-      //   if (token) {
-      //     this.props.mappedvalidateUser(token,this.props.navigation.state.routeName);
-      //   }
-      // })
+      apiObj.getToken().then(token => {
+        if (token) {
+          this.props.mappedvalidateUser(token,this.props.navigation.state.routeName);
+        }
+      })
   }
   
   navigate(screen){
