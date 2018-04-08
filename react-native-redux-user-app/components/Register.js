@@ -7,6 +7,8 @@ import {
   import AppContainer from './AppContainer';
   import Input from './Input';
   import ButtonComp from './Button';
+  import Api from '../utils/api';
+  const apiObj = new Api();
 
 export default class Register extends Component {
  constructor(props) {
@@ -20,6 +22,10 @@ export default class Register extends Component {
      }
  }
 
+ async componentDidMount(){
+   
+}
+
  navigate(screen){
     this.props.mappedNavigate(screen);
  }
@@ -30,7 +36,11 @@ export default class Register extends Component {
  }
 
  signUp(){
-
+   if (this.state.email && this.state.firstname && this.state.password) {
+     this.props.mappedRegister(this.state);
+   } else{
+     alert('Fill All Fields');
+   }
  }
  
   render() {
@@ -77,7 +87,7 @@ export default class Register extends Component {
             secureTextEntry
           />
           <Button block success
-        onPress={() => this.signUp.bind(this)}
+        onPress={() => this.signUp()}
       ><Text>Sign Up</Text>
       </Button>
          </View>

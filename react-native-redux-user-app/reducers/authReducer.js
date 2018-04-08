@@ -26,7 +26,7 @@ const authReducer = (state = initialAuthState, action) => {
       ...state,
         isLoggedIn: false,
         isAuthenticating:false,
-        error:action.resp.message
+        error:action.message
       };
 
   case 'VALIDATE_USER_REQUEST':
@@ -50,6 +50,28 @@ const authReducer = (state = initialAuthState, action) => {
        user:action.resp.user,
        isAuthenticating:false
       };
+
+  case 'REGISTER_REQUEST':
+    return { 
+      ...state,
+        isLoggedIn: false,
+        isAuthenticating:true,
+        };
+  case 'REGISTER_SUCCESS':
+    return {
+        ...state,
+        isLoggedIn: true,
+        isAuthenticating:false,
+        };
+
+  case 'REGISTER_FAILED':
+  return {
+    ...state,
+      isLoggedIn: false,
+      isAuthenticating:false,
+      error:action.message
+    };
+
 
     default:
       return state;

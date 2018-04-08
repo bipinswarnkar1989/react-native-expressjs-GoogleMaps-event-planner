@@ -1,10 +1,10 @@
 import { AsyncStorage } from 'react-native';
 
 export default class Api {
-     postRequest = async (url, method, body, headers) => {
+     postRequest = async (url, body, headers) => {
        try {
          let resp = await fetch(url, {
-                method:method,
+                method:'post',
                 body:JSON.stringify(body),
                 headers:headers
             });
@@ -16,10 +16,10 @@ export default class Api {
        }
     }
 
-    getRequest = async (url, method, headers) => {
+    getRequest = async (url, headers) => {
         try {
           let resp = await fetch(url, {
-                 method:method,
+                 method:'get',
                  headers:headers
              });
          let json = await resp.json();
