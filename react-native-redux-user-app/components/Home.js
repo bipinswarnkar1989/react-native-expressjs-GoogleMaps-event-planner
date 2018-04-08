@@ -8,6 +8,7 @@ import AppContainer from './AppContainer';
 import ButtonComp from './Button';
 import Api from '../utils/api';
 const apiObj = new Api();
+import Loading from './Loading';
 
 class Home extends Component {
     componentDidMount(){
@@ -38,6 +39,15 @@ class Home extends Component {
     }
   render() {
     let { isLoggedIn, isAuthenticating, user, successMsg, error } = this.props.userState;
+    if (isAuthenticating) {
+      return(
+        <AppContainer>
+          <View>
+          <Loading/>
+            </View>
+          </AppContainer>
+      )
+    }
     return (
       <AppContainer>
           <View style={styles.container}>
