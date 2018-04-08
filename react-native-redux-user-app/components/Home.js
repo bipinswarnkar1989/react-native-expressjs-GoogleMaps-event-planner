@@ -32,6 +32,7 @@ class Home extends Component {
     }
     signOut(){
       apiObj.removeToken().then(() => {
+        this.props.mappedLogOut();
         this.navigate('Login');
       })
     }

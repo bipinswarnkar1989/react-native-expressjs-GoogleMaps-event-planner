@@ -120,4 +120,10 @@ export const registerFailed = (message) => {
     }
 }
 
+export const logOut = () => {
+    return {
+        type:'LOGOUT'
+    }
+}
+
 

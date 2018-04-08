@@ -15,6 +15,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
       mappedNavigate:screen => dispatch(navActions.navigate(screen)),
       mappedvalidateUser:(token,routeName) => dispatch(userActions.validateUser(token,routeName)),
+      mappedLogOut: () => dispatch(userActions.logOut()),
     }
 }
 
