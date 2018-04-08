@@ -10,7 +10,7 @@ const userRoutes = (app) => {
     router.route('/auth')
           .post(userCtrl.authenticate);
     router.route('/validate')
-          .get(userCtrl.validateJwt);
+          .get(userCtrl.validateJwt,userCtrl.getUser);
     app.use('/api/user', router);
     
 }

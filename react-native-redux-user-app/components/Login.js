@@ -7,6 +7,8 @@ import {
 import AppContainer from './AppContainer';
 import Input from './Input';
 import ButtonComp from './Button';
+import Api from '../utils/api';
+const apiObj = new Api();
 
 export default class Login extends Component {
   constructor(props) {
@@ -14,8 +16,15 @@ export default class Login extends Component {
     this.state = {
       email: '',
       password: '',
-      accessCode: ''
     }
+  }
+
+  async componentDidMount(){
+      // apiObj.getToken().then(token => {
+      //   if (token) {
+      //     this.props.mappedvalidateUser(token,this.props.navigation.state.routeName);
+      //   }
+      // })
   }
   
   navigate(screen){
@@ -27,7 +36,7 @@ export default class Login extends Component {
     })
   }
   signIn(){
-
+     this.props.mappedLogin(this.state);
   }
   render() {
     return (
@@ -42,7 +51,7 @@ export default class Login extends Component {
             placeholder="Email"
             type='email'
             onChangeText={this.onChangeText.bind(this)}
-            value={this.state.username}
+            value={this.state.email}
             autoFocus={true}
           />
           <Input
@@ -53,7 +62,7 @@ export default class Login extends Component {
             secureTextEntry
           />
           <Button block success
-        onPress={() => this.signIn.bind(this)}
+        onPress={() => this.signIn()}
       ><Text>Sign In</Text>
       </Button>
          </View>

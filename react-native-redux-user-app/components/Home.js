@@ -6,10 +6,19 @@ import {
 } from 'native-base';
 import AppContainer from './AppContainer';
 import ButtonComp from './Button';
+import Api from '../utils/api';
+const apiObj = new Api();
 
 class Home extends Component {
     componentDidMount(){
-        let nav = this.props.navigation;
+      let nav = this.props.navigation;
+      apiObj.getToken().then(token => {
+        if (token) {
+          this.props.mappedvalidateUser(token,this.props.navigation.state.routeName);
+        }else{
+          nav.navigate({ routeName:'Login' })
+        }
+      })
         BackHandler.addEventListener('hardwareBackPress', function() {
             if (nav.state.routeName !== "Login") {
               nav.navigate({ routeName:'Login' })
@@ -21,15 +30,22 @@ class Home extends Component {
     navigate(s){
         this.props.mappedNavigate(s);
     }
+    signOut(){
+      apiObj.removeToken().then(() => {
+        this.navigate('Login');
+      })
+    }
   render() {
+    let { isLoggedIn, isAuthenticating, user, successMsg, error } = this.props.userState;
     return (
       <AppContainer>
           <View style={styles.container}>
-        <Text> Home {this.props.navigation.state.routeName}</Text>
+        <Text> {this.props.navigation.state.routeName}</Text>
+        <Text>{user && user.email}</Text>
         <ButtonComp
           isLoading={false}
-          title='Sign In'
-          onPress={() => this.navigate('Login')}
+          title='Sign Out'
+          onPress={() => this.signOut()}
         /> 
       </View>
       </AppContainer>

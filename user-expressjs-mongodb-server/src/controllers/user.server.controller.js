@@ -81,6 +81,7 @@ export  class userController {
     validateJwt = (req,res,next) => {
         let token = req.headers['authorization'];
         if (token) {
+            console.log('validateJwt: '+ JSON.stringify(req.headers));
             jwt.verify(token, process.env.SECRET_TOKEN, function(err,result) {
                 if(err){
                     console.log(err);
