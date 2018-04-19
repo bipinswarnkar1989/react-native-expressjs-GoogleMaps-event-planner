@@ -6,7 +6,8 @@ import {
     Text,
     Card,
     Container,
-  Content
+  Content,
+  List, ListItem
 } from 'native-base';
 import AppContainer from './AppContainer';
 import ButtonComp from './Button';
@@ -81,7 +82,7 @@ class Home extends Component {
         <Container>
         <Content>
       <AppHeader
-       title="Home" 
+       title="My Events" 
        drawerOpen={() => this.props.navigation.navigate('DrawerOpen')}
        />
           <View style={styles.container}>
@@ -92,6 +93,17 @@ class Home extends Component {
           title='Sign Out'
           onPress={() => this.signOut()}
         /> 
+         <List>
+            <ListItem>
+              <Text>Simon Mignolet</Text>
+            </ListItem>
+            <ListItem>
+              <Text>Nathaniel Clyne</Text>
+            </ListItem>
+            <ListItem>
+              <Text>Dejan Lovren</Text>
+            </ListItem>
+          </List>
       </View>
       </Content>
       </Container>

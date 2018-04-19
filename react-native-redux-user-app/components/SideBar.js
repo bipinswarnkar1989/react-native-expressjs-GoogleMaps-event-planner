@@ -19,8 +19,21 @@ import {
   CardItem,
 } from "native-base";
 import OIcons from "react-native-vector-icons/Octicons";
+import Api from '../utils/api';
+const apiObj = new Api();
+import * as navActions from '../actions/navActions';
+import * as userActions from '../actions/userActions';
 
  class SideBar extends React.Component {
+  signOut(){
+    apiObj.removeToken().then(() => {
+      this.props.mappedLogOut();
+      this.navigate('Login');
+    })
+  }
+  navigate(s){
+    this.props.mappedNavigate(s);
+}
     render() {
       const  { user, isLoggedIn, email }  = this.props.userState;
       return (
@@ -77,10 +90,15 @@ import OIcons from "react-native-vector-icons/Octicons";
           )}
           keyExtractor={(item, index) => index.toString()}
         />
-
+    <List>
+            <ListItem>
+              <Text onPress={() => this.signOut()}>Sign Out</Text>
+            </ListItem>
+            </List>
             </View>
             <View>
-            <Text>{this.props && JSON.stringify(this.props)}</Text>
+            <Text>{//this.props && JSON.stringify(this.props)
+            }</Text>
               </View>
             </Content>
             </Container>
@@ -127,7 +145,14 @@ import OIcons from "react-native-vector-icons/Octicons";
       
       })
       
+    const mapDispatchToProps = (dispatch) => {
+        return {
+          mappedNavigate:screen => dispatch(navActions.navigate(screen)),
+          mappedvalidateUser:(token,routeName) => dispatch(userActions.validateUser(token,routeName)),
+          mappedLogOut: () => dispatch(userActions.logOut()),
+        }
+    }
 
       export default connect(state => ({
         userState: state.authState
-    }))(SideBar);
+    }),mapDispatchToProps)(SideBar);
