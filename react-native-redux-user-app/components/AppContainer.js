@@ -12,7 +12,7 @@ export default class AppContainer extends Component {
       <Container>
         <Content>
       <View style={styles.container}>
-        <View style={styles.viewStyle}>
+        <View>
         { this.props.children }
           </View>
       </View>

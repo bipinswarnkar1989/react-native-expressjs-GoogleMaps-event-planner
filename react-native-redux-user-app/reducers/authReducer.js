@@ -48,7 +48,8 @@ const authReducer = (state = initialAuthState, action) => {
   return {
       ...state,
        user:action.resp.user,
-       isAuthenticating:false
+       isAuthenticating:false,
+       isLoggedIn: true,
       };
 
   case 'REGISTER_REQUEST':

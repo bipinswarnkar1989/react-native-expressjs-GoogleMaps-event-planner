@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, BackHandler } from 'react-native';
+import { View, StyleSheet, BackHandler, Animated,
+  Dimensions
+ } from 'react-native';
 import {
     Text,
-    Card
+    Card,
+    Container,
+  Content
 } from 'native-base';
 import AppContainer from './AppContainer';
 import ButtonComp from './Button';
 import Api from '../utils/api';
 const apiObj = new Api();
 import Loading from './Loading';
+import AppHeader from './AppHeader';
 
 class Home extends Component {
+  AnimatedScale = new Animated.Value(1)
+
     componentDidMount(){
+      this.animate();
       let nav = this.props.navigation;
       apiObj.getToken().then(token => {
         if (token) {
@@ -37,6 +45,27 @@ class Home extends Component {
         this.navigate('Login');
       })
     }
+
+    animate() {
+      Animated.timing(
+        this.AnimatedScale,
+        {
+          toValue: .8,
+          duration: 1250,
+          useNativeDriver: true
+        }
+      ).start(() => {
+        Animated.timing(
+          this.AnimatedScale,
+          {
+            toValue: 1,
+            duration: 1250,
+            useNativeDriver: true
+          }
+        ).start(() => this.animate())
+      })
+    }
+
   render() {
     let { isLoggedIn, isAuthenticating, user, successMsg, error } = this.props.userState;
     if (isAuthenticating) {
@@ -49,7 +78,12 @@ class Home extends Component {
       )
     }
     return (
-      <AppContainer>
+        <Container>
+        <Content>
+      <AppHeader
+       title="Home" 
+       drawerOpen={() => this.props.navigation.navigate('DrawerOpen')}
+       />
           <View style={styles.container}>
         <Text> {this.props.navigation.state.routeName}</Text>
         <Text>{user && user.email}</Text>
@@ -59,15 +93,19 @@ class Home extends Component {
           onPress={() => this.signOut()}
         /> 
       </View>
-      </AppContainer>
+      </Content>
+      </Container>
     );
   }
 }
 
 const styles = StyleSheet.create({
     container:{
-        flex:1,
-        flexDirection: 'column',
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: 5,
     }
 })
 

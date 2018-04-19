@@ -1,5 +1,6 @@
 import React from "react";
-import { AppRegistry, Image, StatusBar,StyleSheet,View } from "react-native";
+import { connect } from 'react-redux';
+import { AppRegistry, Image, StatusBar,StyleSheet,View, FlatList, TouchableOpacity } from "react-native";
 
 import {
   Button,
@@ -15,12 +16,13 @@ import {
   Thumbnail,
   Badge,
   Card,
-  CardItem
+  CardItem,
 } from "native-base";
 import OIcons from "react-native-vector-icons/Octicons";
 
-export default class SideBar extends React.Component {
+ class SideBar extends React.Component {
     render() {
+      const  { user, isLoggedIn, email }  = this.props.userState;
       return (
         <Container>
           <Content bounces={false}
@@ -45,10 +47,41 @@ export default class SideBar extends React.Component {
                   <Thumbnail source={{ uri: 'https://avatars2.githubusercontent.com/u/19688480?s=460&v=4' }} />
                 </View>
                 <View style={styles.userStyle}>
-                  <Text style={styles.userFullName}>Bipin Swarnkar</Text>
+                  <Text style={styles.userFullName}>{isLoggedIn ? user.firstname + ' '+ user.lastname : 'Guest User'}</Text>
                 </View>
             </View>
             </View>
+            <View>
+            <FlatList
+            style={{paddingTop:10}}
+          data={[
+            {
+              text:'Home',
+              screen:'Home'
+            },
+            {
+              text:'My Events',
+              screen:'MyEvents'
+            },
+            {
+              text:'Create Event',
+              screen:'CreateEvent'
+            }
+          ]}
+          renderItem={({ item }) => (
+            <TouchableOpacity onPress={this._onPress}>
+            <ListItem noBorder>
+              <Text>{item.text}</Text>
+            </ListItem>
+            </TouchableOpacity>
+          )}
+          keyExtractor={(item, index) => index.toString()}
+        />
+
+            </View>
+            <View>
+            <Text>{this.props && JSON.stringify(this.props)}</Text>
+              </View>
             </Content>
             </Container>
             );
@@ -58,8 +91,7 @@ export default class SideBar extends React.Component {
      const styles = StyleSheet.create({
         userContainer:{
            flex:1,
-           flexDirection: 'column',
-           justifyContent:'flex-start'
+           padding:2
         },
         userStyle:{
           justifyContent: 'center',
@@ -95,3 +127,7 @@ export default class SideBar extends React.Component {
       
       })
       
+
+      export default connect(state => ({
+        userState: state.authState
+    }))(SideBar);
