@@ -6,6 +6,7 @@ import path from 'path';
 import dotenv from 'dotenv';
 
 import userRoutes from './routes/user.server.route';
+import eventRoutes from './routes/event.server.route';
 
 const app = express();
 
@@ -37,6 +38,7 @@ mongoose.Promise = global.Promise;
 const mongodb = mongoose.connect(mongoDbUri);
 mongodb.then(() => {
     userRoutes(app);
+    eventRoutes(app);
     app.get('/', (req,res) => {
         return res.end('Api working');
       })
