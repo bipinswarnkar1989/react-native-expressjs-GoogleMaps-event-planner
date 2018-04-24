@@ -31,13 +31,15 @@ export default class eventController {
             newEvent.createdAt = Date.now();
             if(req.file){
                 console.log('uploadEventImage: '+ JSON.stringify(req.file));
-                newEvent.image = "/images/events/"+"small-bw-"+req.file.filename;
+                newEvent.smallImage = "/images/events/"+"small-"+req.file.filename;
+                newEvent.largeImage = "/images/events/"+"large-"+req.file.filename;
+
                 Jimp.read(req.file.path).then(function (image) {
                     var imageClone = image.clone();
                     var w = image.bitmap.width; // the width of the image
                     var h = image.bitmap.height; // the height of the image
                     var dimensions = calculateImageDimensions(w,h,600,400);//Get proportionate dimensions
-                    image.resize(50, 50)            // resize 
+                    image.resize(100, 100)            // resize 
                          .quality(60)                 // set JPEG quality 
                          .write(imgPath+"small-"+req.file.filename);
                     imageClone.cover(dimensions.width, dimensions.height)

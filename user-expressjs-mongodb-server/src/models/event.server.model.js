@@ -7,10 +7,10 @@ const eventSchema = new Schema({
         required:true,
         es_indexed:true
     },
-    image:{
+    smallImage:{
         type:String
     },
-    thumbnail:{
+    largeImage:{
         type:String
     },
     description:String,
