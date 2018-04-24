@@ -82,7 +82,7 @@ export default class eventController {
     getEvents = (req,res,next) => {
        if (req.params.page && req.params.limit) {
         let page = parseInt(req.params.page);
-        let limit = parseInt(req.params.limit) ? parseInt(req.params.limit) < 30 : 30;
+        let limit = parseInt(req.params.limit) < 30 ? parseInt(req.params.limit) : 30;
         let skip_value = (page * limit) - limit;
         Event.find()
              .limit(limit)
