@@ -1,10 +1,53 @@
 import Event from '../models/event.server.model';
+import multer from 'multer';
+import Jimp from 'jimp';
+
+//set multer storage
+var storage = multer.diskStorage({
+    destination:(req,file,cb) => {
+        cb(null, './public/images/events')
+    },
+    filename:(req,file,cb) => {
+        let date = Date.now();
+        var imageName = file.originalname.split('.')[file.originalname.split('.').length - 2];
+        var newImageName = imageName.replace(/ /g, '_');
+        newImageName = date + newImageName + "." + file.originalname.split('.')[file.originalname.split('.').length - 1];
+        cb(null, newImageName);
+    }
+})
+
+const Upload = multer({
+    storage:storage
+}).single("image");
+
+const imgPath = "./public/images/events/";
 
 export default class eventController {
+    self = this;
     createEvent = (req,res,next) => {
         console.log('createEvent: '+ JSON.stringify(req.body));
         if (req.body) {
             let newEvent = new Event(req.body);
+            newEvent.createdAt = Date.now();
+            if(req.file){
+                console.log('uploadEventImage: '+ JSON.stringify(req.file));
+                newEvent.image = "/images/events/"+"small-bw-"+req.file.filename;
+                Jimp.read(req.file.path).then(function (image) {
+                    var imageClone = image.clone();
+                    var w = image.bitmap.width; // the width of the image
+                    var h = image.bitmap.height; // the height of the image
+                    var dimensions = calculateImageDimensions(w,h,600,400);//Get proportionate dimensions
+                    image.resize(50, 50)            // resize 
+                         .quality(60)                 // set JPEG quality 
+                         .write(imgPath+"small-"+req.file.filename);
+                    imageClone.cover(dimensions.width, dimensions.height)
+                         .quality(60)
+                         .write(imgPath+"large-"+req.file.filename)
+                        // .write(req.file.path); // save 
+                }).catch(function (err) {
+                    console.error(err);
+                });
+              }
             newEvent.save((err,event) => {
                 if (err) {
                     console.log('Error in createEvent: '+ JSON.stringify(err));
@@ -57,4 +100,35 @@ export default class eventController {
              })
        }
     }
+
+    uploadImage = (req,res,next) => {
+        Upload(req,res,err => {
+          if(err){
+               console.log('ERROR:'+err);
+               return res.json({'success':false,'message':err});;
+             }
+             else{
+               next();
+             }
+        });
+      }
+
+    
+}
+
+const calculateImageDimensions = (width,height,maxWidth,maxHeight) => {
+    // calculate the width and height, constraining the proportions
+    if (width > height) {
+        if (width > maxWidth) {
+            height = Math.round(height *= maxWidth / width);
+            width = maxWidth;
+        }
+    }
+    else {
+        if (height > maxHeight) {
+            width = Math.round(width *= maxHeight / height);
+            height = maxHeight;
+        }
+    }
+    return {width:width,height:height};
 }

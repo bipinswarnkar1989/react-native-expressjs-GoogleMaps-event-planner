@@ -5,7 +5,7 @@ const eventRoutes = (app) => {
    const router = express.Router();
    const eventCtrl = new eventController();
    router.route('/')
-         .post(eventCtrl.createEvent);
+         .post(eventCtrl.uploadImage,eventCtrl.createEvent);
 
    router.route('/:page/:limit')
          .get(eventCtrl.getEvents);
