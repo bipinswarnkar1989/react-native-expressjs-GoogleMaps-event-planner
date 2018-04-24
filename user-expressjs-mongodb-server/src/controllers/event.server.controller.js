@@ -1,6 +1,7 @@
 import Event from '../models/event.server.model';
 import multer from 'multer';
 import Jimp from 'jimp';
+import fs from 'fs';
 
 //set multer storage
 var storage = multer.diskStorage({
@@ -62,6 +63,11 @@ export default class eventController {
                 else {
                     if (event) {
                         console.log('Event created successfully: '+ JSON.stringify(event));
+                        if (req.file) {
+                            fs.unlink(req.file.path, (err) => {
+                                if(!err) console.log(req.file.path +' was deleted');
+                            });
+                        }
                         return  res.json({
                             success:true,
                             message:'Event Created Successfully',
