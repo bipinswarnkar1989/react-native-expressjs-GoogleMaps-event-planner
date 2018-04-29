@@ -34,6 +34,7 @@ import * as userActions from '../actions/userActions';
   navigate(s){
     this.props.mappedNavigate(s);
 }
+
     render() {
       const  { user, isLoggedIn, email }  = this.props.userState;
       return (
@@ -82,9 +83,9 @@ import * as userActions from '../actions/userActions';
             }
           ]}
           renderItem={({ item }) => (
-            <TouchableOpacity onPress={this._onPress}>
+            <TouchableOpacity>
             <ListItem noBorder>
-              <Text>{item.text}</Text>
+              <Text onPress={() =>this.navigate(item.screen)}>{item.text}</Text>
             </ListItem>
             </TouchableOpacity>
           )}

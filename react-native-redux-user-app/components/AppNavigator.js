@@ -8,6 +8,7 @@ import Login from '../containers/Login';
 import Register from '../containers/Register';
 import Home from '../containers/Home';
 import SideBar from "./SideBar.js";
+import CreateEvent from '../containers/CreateEvent';
 import {
     StyleSheet,
     View,
@@ -26,6 +27,7 @@ export const AppNavigator = DrawerNavigator({
   Login: { screen: Login },
   Register: { screen: Register },
   Home: { screen: Home },
+  CreateEvent: { screen: CreateEvent }
   
 },{
   initialRouteName: 'App',
