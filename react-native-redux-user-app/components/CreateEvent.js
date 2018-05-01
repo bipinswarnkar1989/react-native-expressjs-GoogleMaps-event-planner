@@ -4,6 +4,7 @@ import {
     Text,
     StyleSheet,
     TextInput,
+    TouchableOpacity,
      } from 'react-native';
 import {
     Card,
@@ -12,6 +13,8 @@ import {
   Icon,
   Button 
 } from 'native-base';
+//import ImagePicker from 'react-native-customized-image-picker';
+import { ImagePicker } from 'expo';
 import Loading from './Loading';
 import AppHeader from './AppHeader';
 
@@ -24,6 +27,8 @@ class CreateEvent extends Component {
          imageSelectOptions:false
      }
      this.toggleImageSelect = this.toggleImageSelect.bind(this);
+     this.startCamera = this.startCamera.bind(this);
+     this.gotoGallery = this.gotoGallery.bind(this);
  }
 
  toggleImageSelect(){
@@ -32,6 +37,37 @@ class CreateEvent extends Component {
             imageSelectOptions:!prevState.imageSelectOptions
         }
     })
+}
+
+startCamera = async() => {
+    let result = await ImagePicker.launchCameraAsync({
+        allowsEditing: true,
+        aspect: [4, 3],
+      });
+  
+      console.log(result);
+  
+      if (!result.cancelled) {
+        this.setState({ image: result.uri });
+      }
+}
+
+gotoGallery = async() => {
+    // ImagePicker.openPicker({
+  
+    // }).then(image => {
+    //   console.log(image);
+    // });
+    let result = await ImagePicker.launchImageLibraryAsync({
+        allowsEditing: true,
+        aspect: [4, 3],
+      });
+  
+      console.log(result);
+  
+      if (!result.cancelled) {
+        this.setState({ image: result.uri });
+      }
 }
   render() {
     return (
@@ -64,13 +100,17 @@ class CreateEvent extends Component {
         <View style={styles.imageContainer}>
         {this.state.imageSelectOptions && 
            <View style={styles.imageSelectOptions}>
-           <View style={{alignItems:'center'}}>
+           <View>
+           <TouchableOpacity style={{alignItems:'center'}} onPress={this.startCamera}>
            <Icon name='camera' />
            <Text>Camera</Text>
+           </TouchableOpacity>
            </View>
-           <View style={{alignItems:'center'}}>
+           <View>
+           <TouchableOpacity style={{alignItems:'center'}} onPress={this.gotoGallery}> 
            <Icon name='images' />
            <Text>Gallery</Text>
+           </TouchableOpacity>
            </View>
          </View>
         }
