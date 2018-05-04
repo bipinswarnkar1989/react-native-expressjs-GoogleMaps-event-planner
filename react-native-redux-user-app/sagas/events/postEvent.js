@@ -1,10 +1,10 @@
 import { takeLatest, put, call, select } from 'redux-saga/effects';
-import { eventApi, jsonHeaders } from "../../utils/constants.js";
+import { eventApi, multipartHeaders } from "../../utils/constants.js";
 import Api from "../../utils/api";
 const apiObj = new Api();
 
 const requestPost = async (event) => {
-    return await apiObj.postFormData(`${eventApi}`, event, '');
+    return await apiObj.postFormData(`${eventApi}`, event, multipartHeaders);
 }
 
  function *addEvent(action) {

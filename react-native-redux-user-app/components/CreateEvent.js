@@ -61,8 +61,11 @@ gotoGallery = async() => {
     //   console.log(image);
     // });
     let result = await ImagePicker.launchImageLibraryAsync({
+        mediaTypes:"Images",
         allowsEditing: true,
         aspect: [4, 3],
+        quality:0.8,
+        base64 :true,
       });
   
       console.log(result);
@@ -73,10 +76,14 @@ gotoGallery = async() => {
 }
 
 handleAddEvent = async() => {
-    let formData = new FormData();
+    const formData = new FormData();
     formData.append('name', this.state.name);
     formData.append('description', this.state.description);
-    formData.append('image', this.state.image);
+    formData.append('image', {
+        uri: this.state.image,
+        type: 'image/jpeg', // or photo.type
+        name: this.state.name+'-image.jpeg'
+      });
     formData.append('creator', this.props.userState.user._id);
     await this.props.mappedaddEvent(formData);
 }
