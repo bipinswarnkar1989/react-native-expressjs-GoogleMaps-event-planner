@@ -1,10 +1,16 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from '../reducers';
+import createSagaMiddleware from 'redux-saga';
+
+import rootSaga from '../sagas';
+
+const sagaMiddleware = createSagaMiddleware()
 
 const configureStore = initialState => {
     const middlewares = [
-        thunk
+        thunk,
+        sagaMiddleware
     ];
 
     const store = createStore(
@@ -13,6 +19,7 @@ const configureStore = initialState => {
         compose(applyMiddleware(...middlewares)),
         window.devToolsExtension ? window.devToolsExtension() : f => f // add support form redux dev tools
     );
+
     if (module.hot) {
         //Enable Webpack hot module replacement from reducers
         module.hot.accept('../reducers', () => {
@@ -20,7 +27,7 @@ const configureStore = initialState => {
           store.replaceReducer(nextReducer);
         });
      };
-
+     sagaMiddleware.run(rootSaga);
      return store;
 };
 

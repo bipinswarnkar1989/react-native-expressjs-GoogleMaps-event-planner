@@ -29,6 +29,27 @@ const eventReducer = (state = initalState, action) => {
               successMsg:null,
               errorMsg:action.message
           }
+        case 'ADD_EVENT':
+          return {
+              ...state,
+              isLoading:true
+          }
+
+        case 'FAILED_ADD_EVENT':
+          return {
+              ...state,
+              isLoading:false,
+              errorMsg:action.payload,
+              successMsg:null,
+          }
+        case 'SUCCESS_ADD_EVENT':
+           return {
+               ...state,
+               isLoading:false,
+               successMsg:action.payload.message,
+               newEvent:action.payload.event,
+               errorMsg:null
+           }
     
         default:
             return state;

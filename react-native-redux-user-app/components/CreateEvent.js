@@ -22,7 +22,9 @@ class CreateEvent extends Component {
  constructor(props){
      super(props);
      this.state = {
-         name:null,
+         name:'',
+         description:'',
+         image:null,
          inputHeight:0,
          imageSelectOptions:false
      }
@@ -69,7 +71,17 @@ gotoGallery = async() => {
         this.setState({ image: result.uri });
       }
 }
+
+handleAddEvent = async() => {
+    let formData = new FormData();
+    formData.append('name', this.state.name);
+    formData.append('description', this.state.description);
+    formData.append('image', this.state.image);
+    formData.append('creator', this.props.userState.user._id);
+    await this.props.mappedaddEvent(formData);
+}
   render() {
+    const { newEvent, isLoading, successMsg, errorMsg } = this.props.eventState;
     return (
         <Container>
         <Content>
@@ -117,8 +129,15 @@ gotoGallery = async() => {
         <Button full iconLeft onPress={this.toggleImageSelect}>
             <Icon name='image' />
             <Text style={{paddingLeft:10, color:'white'}}>Event Image</Text>
-          </Button>
+          </Button> 
         </View>
+        <Button full onPress={() => this.handleAddEvent()}>
+            <Text style={{fontSize:15, color:'white'}}>Submit</Text>
+          </Button>
+      </View>
+      <View style={styles.messageContainer}>
+         <Text style={styles.successMessage}>{ successMsg && successMsg}</Text>
+         <Text style={styles.errorMessage}>{ errorMsg && errorMsg}</Text>
       </View>
       </View>
       </Content>
@@ -152,6 +171,19 @@ const styles = StyleSheet.create({
        justifyContent:'space-between',
        width:200,
        
+    },
+    messageContainer:{
+        flex:1,
+        marginTop: 20,
+        alignItems: 'center',
+    },
+    successMessage:{
+        fontSize:13,
+        color:'green'
+    },
+    errorMessage:{
+        fontSize:13,
+        color:'red'
     }
 })
 

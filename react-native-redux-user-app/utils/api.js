@@ -16,6 +16,21 @@ export default class Api {
        }
     }
 
+    postFormData = async (url, body, headers) => {
+        try {
+          let resp = await fetch(url, {
+                 method:'post',
+                 body:body,
+                 headers:headers
+             });
+         let json = await resp.json();
+         return json;
+        } catch (error) {
+            alert(error.message);
+            console.log(error);
+        }
+     }
+
     getRequest = async (url, headers) => {
         try {
           let resp = await fetch(url, {

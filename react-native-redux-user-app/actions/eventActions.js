@@ -1,6 +1,7 @@
 import { eventApi, jsonHeaders } from "../utils/constants";
 import Api from "../utils/api";
 const apiObj = new Api();
+import { call, put } from 'redux-saga/effects';
 
 export const getEvents = (user,page,limit) => {
     return (dispatch) => {
@@ -36,5 +37,12 @@ export const failedGetEvents = (message) => {
     return {
         type:'FAILED_GET_EVENTS',
         message
+    }
+}
+
+export const addEvent = (event) => {
+    return {
+        type:'ADD_EVENT',
+        event
     }
 }
