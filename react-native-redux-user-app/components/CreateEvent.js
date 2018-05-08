@@ -14,9 +14,13 @@ import {
   Button 
 } from 'native-base';
 //import ImagePicker from 'react-native-customized-image-picker';
+import RNGooglePlaces from 'react-native-google-places';
 import { ImagePicker } from 'expo';
 import Loading from './Loading';
 import AppHeader from './AppHeader';
+import MapWithSearchBox from './MapWithSearchBox';
+
+const GOOGLE_PLACES_API_KEY = 'AIzaSyDhPHD3lGTDQe1mOwo7L-SD7dmpKsDPUsE';
 
 class CreateEvent extends Component {
  constructor(props){
@@ -98,11 +102,16 @@ handleAddEvent = async() => {
        />
       <View style={styles.container}>
       <View style={styles.formContainer}>
+      <Text style={styles.h4}>* Where is the event?</Text>
+          <View style={{flex: 1}}>
+            <MapWithSearchBox
+            />
+          </View>
       <TextInput 
        autoCapitalize="none"
        style={styles.inputStyle}
        onChangeText={value => this.setState({name:value})}
-       placeholder="Event Name"
+       placeholder="* Event Name"
        placeholderTextColor="#DE005E"
        />
        <TextInput
@@ -133,14 +142,18 @@ handleAddEvent = async() => {
            </View>
          </View>
         }
-        <Button full iconLeft onPress={this.toggleImageSelect}>
-            <Icon name='image' />
+        <TouchableOpacity style={styles.imageSelect} onPress={this.toggleImageSelect}>
+            <Icon name='image' style={{color: '#fff'}} />
             <Text style={{paddingLeft:10, color:'white'}}>Event Image</Text>
-          </Button> 
+          </TouchableOpacity> 
         </View>
-        <Button full onPress={() => this.handleAddEvent()}>
-            <Text style={{fontSize:15, color:'white'}}>Submit</Text>
-          </Button>
+        
+          <TouchableOpacity
+          onPress={() => this.handleAddEvent()}
+          style={[styles.submitButton, styles.buttonMargin]}>
+          <Text style={styles.largeButtonText}>Next</Text>
+          <Icon name='ios-arrow-forward' style={{color: '#fff',marginTop:4,paddingLeft:6}} />
+        </TouchableOpacity>
       </View>
       <View style={styles.messageContainer}>
          <Text style={styles.successMessage}>{ successMsg && successMsg}</Text>
@@ -191,7 +204,86 @@ const styles = StyleSheet.create({
     errorMessage:{
         fontSize:13,
         color:'red'
-    }
+    },
+    submitButton:{
+        alignItems: 'center',
+        height:50,
+        justifyContent:'center',
+        backgroundColor:'#DE005E',
+        marginTop:50,
+        flexDirection: 'row',
+    },
+    buttonMargin: {
+        marginBottom: 50
+      },
+      largeButtonText: {
+        fontSize: 24,
+        fontWeight: '400',
+        color: 'white'
+      },
+      imageSelect:{
+          alignItems: 'center',
+          flexDirection: 'row',
+          backgroundColor:'blue',
+          padding:10
+      },
+      h4: {
+        fontSize: 16,
+        fontWeight: '300',
+        color:'#DE005E'
+      },
 })
+
+ const autocompleteStyles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: 'white',
+    },
+    textInputContainer: {
+      backgroundColor: 'white',
+      height: 44,
+      borderTopColor: 'white',
+      borderBottomColor: 'white',
+    },
+    textInput: {
+      backgroundColor: 'white',
+      borderRadius: 5,
+      fontSize: 18,
+      height: 28,
+      marginLeft: 8,
+      marginRight: 8,
+      marginTop: 7.5,
+      paddingBottom: 4.5,
+      paddingLeft: 10,
+      paddingRight: 10,
+      paddingTop: 4.5,
+    },
+    poweredContainer: {
+      alignItems: 'center',
+      backgroundColor:'#EBEEF5',
+      justifyContent: 'center',
+      
+    },
+    powered: {
+      marginTop: 1,
+    },
+    listView: {
+      flex: 1,
+    },
+    row: {
+      padding: 13,
+      height: 44,
+      flexDirection: 'row',
+    },
+    separator: {
+      height: 1,
+      backgroundColor: 'white',
+    },
+    loader: {
+      flexDirection: 'row',
+      justifyContent: 'flex-end',
+      height: 20,
+    }
+  });
 
 export default CreateEvent;
