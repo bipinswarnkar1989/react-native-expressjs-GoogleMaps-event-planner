@@ -103,7 +103,7 @@ handleAddEvent = async() => {
       <View style={styles.container}>
       <View style={styles.formContainer}>
       <Text style={styles.h4}>* Where is the event?</Text>
-          <View style={{flex: 1}}>
+          <View style={{flex: 1, height:300, width:'100%'}}>
             <MapWithSearchBox
             />
           </View>

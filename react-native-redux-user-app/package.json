@@ -43,6 +43,7 @@
     "react-native": "0.54.0",
     "react-native-customized-image-picker": "^0.1.0",
     "react-native-google-places": "^2.5.0",
+    "react-native-maps": "^0.21.0",
     "react-navigation": "^1.5.8",
     "react-navigation-redux-helpers": "^1.0.3",
     "react-redux": "^5.0.7",
