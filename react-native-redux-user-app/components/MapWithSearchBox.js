@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet  } from 'react-native';
+import { View, Text, StyleSheet, Dimensions  } from 'react-native';
 //import MapView,{ Marker } from 'react-native-maps';
 import {  MapView } from 'expo';
+
 
 class MapWithSearchBox extends Component {
   constructor(props) {
@@ -41,8 +42,6 @@ class MapWithSearchBox extends Component {
     this.setState({ mapRegion });
   };
 
-
-  
   
   render() {
     if(this.state.latitude && this.state.longitude){
@@ -58,10 +57,10 @@ class MapWithSearchBox extends Component {
  
       <MapView.Marker
         coordinate={{latitude:this.state.latitude,longitude:this.state.longitude}}
-        title={"Your Location"}
+        title={"Your Location"} description="Some description"
       />
-
      </MapView> 
+     
    )
   } else {
     return(
@@ -81,7 +80,8 @@ const styles = StyleSheet.create({
     },
     map:{
 		...StyleSheet.absoluteFillObject
-	}
+  },
+  
   });
 
 export default MapWithSearchBox;
