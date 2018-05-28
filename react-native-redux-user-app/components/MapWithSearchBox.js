@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet  } from 'react-native';
-import MapView from 'react-native-maps';
+//import MapView,{ Marker } from 'react-native-maps';
+import {  MapView } from 'expo';
 
 class MapWithSearchBox extends Component {
   constructor(props) {
@@ -9,53 +10,74 @@ class MapWithSearchBox extends Component {
         latitude: null,
         longitude: null,
         error:null,
+        mapRegion: null,
+    hasLocationPermissions: false,
+    locationResult: null
       };
   }
 
   componentDidMount() {
-    navigator.geolocation.getCurrentPosition(
-       (position) => {
-         console.log("wokeeey");
-         console.log(position);
-         this.setState({
-           latitude: position.coords.latitude,
-           longitude: position.coords.longitude,
-           error: null,
-         });
-       },
-       (error) => this.setState({ error: error.message }),
-       { enableHighAccuracy: false, timeout: 200000, maximumAge: 1000 },
-     );
+     this.getCurrentLocation();
    }
+
+   getCurrentLocation(){
+    navigator.geolocation.getCurrentPosition(
+        (position) => {
+          console.log("wokeeey");
+          console.log(position);
+          this.setState({
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+            error: null,
+          });
+        },
+        (error) => this.setState({ error: error.message }),
+        { enableHighAccuracy: false, timeout: 200000, maximumAge: 1000 },
+      );
+   }
+
+   _handleMapRegionChange = mapRegion => {
+    console.log(mapRegion);
+    this.setState({ mapRegion });
+  };
+
+
+  
   
   render() {
+    if(this.state.latitude && this.state.longitude){
     return (
-      <View style={styles.mapContainer}>
-         <MapView
-       provider={MapView.PROVIDER_GOOGLE}
-       style={styles.map} initialRegion={{
-       latitude:-6.270565,
-       longitude:106.759550,
-       latitudeDelta: 1,
-       longitudeDelta: 1
-      }}>
-  
-      {this.state.latitude && this.state.longitude && <MapView.Marker
-         coordinate={{latitude:this.state.latitude,longitude:this.state.longitude}}
-         title={"Your Location"}
-       />}
+       <MapView
+      provider={MapView.PROVIDER_GOOGLE}
+      style={{ flex: 1 }} initialRegion={{
+      latitude:this.state.latitude,
+      longitude:this.state.longitude,
+      latitudeDelta: 1,
+      longitudeDelta: 1
+     }}>
+ 
+      <MapView.Marker
+        coordinate={{latitude:this.state.latitude,longitude:this.state.longitude}}
+        title={"Your Location"}
+      />
 
-      </MapView>
-      </View>
-    );
+     </MapView> 
+   )
+  } else {
+    return(
+      <View><Text>Loading Map...</Text></View>
+    )
   }
+}
 }
 
 const styles = StyleSheet.create({
     mapContainer: {
-      flex: 1,
+      ...StyleSheet.absoluteFillObject,
+      height: 200,
+      width: 200,
+      justifyContent: 'flex-end',
       alignItems: 'center',
-      justifyContent: 'center',
     },
     map:{
 		...StyleSheet.absoluteFillObject

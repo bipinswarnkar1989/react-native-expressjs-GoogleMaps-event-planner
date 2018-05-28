@@ -21,14 +21,15 @@ import {
 } from 'react-native';
 
 import { addListener } from '../utils/redux';
+import SetEventLocation from '../containers/SetEventLocation';
 
 export const AppNavigator = DrawerNavigator({
   App: { screen: App },
   Login: { screen: Login },
   Register: { screen: Register },
   Home: { screen: Home },
-  CreateEvent: { screen: CreateEvent }
-  
+  CreateEvent: { screen: CreateEvent },
+  SetEventLocation: { screen: SetEventLocation },
 },{
   initialRouteName: 'App',
   headerMode:'node',

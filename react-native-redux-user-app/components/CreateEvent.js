@@ -14,7 +14,7 @@ import {
   Button 
 } from 'native-base';
 //import ImagePicker from 'react-native-customized-image-picker';
-import RNGooglePlaces from 'react-native-google-places';
+
 import { ImagePicker } from 'expo';
 import Loading from './Loading';
 import AppHeader from './AppHeader';
@@ -90,6 +90,7 @@ handleAddEvent = async() => {
       });
     formData.append('creator', this.props.userState.user._id);
     await this.props.mappedaddEvent(formData);
+    this.props.navigation.navigate('SetEventLocation');
 }
   render() {
     const { newEvent, isLoading, successMsg, errorMsg } = this.props.eventState;
@@ -102,11 +103,6 @@ handleAddEvent = async() => {
        />
       <View style={styles.container}>
       <View style={styles.formContainer}>
-      <Text style={styles.h4}>* Where is the event?</Text>
-          <View style={{flex: 1, height:300, width:'100%'}}>
-            <MapWithSearchBox
-            />
-          </View>
       <TextInput 
        autoCapitalize="none"
        style={styles.inputStyle}
