@@ -11,9 +11,6 @@ class MapWithSearchBox extends Component {
         latitude: null,
         longitude: null,
         error:null,
-        mapRegion: null,
-    hasLocationPermissions: false,
-    locationResult: null
       };
   }
 
@@ -25,12 +22,13 @@ class MapWithSearchBox extends Component {
     navigator.geolocation.getCurrentPosition(
         (position) => {
           console.log("wokeeey");
-          console.log(position);
+          console.log(position);alert(JSON.stringify(position))
           this.setState({
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
             error: null,
           });
+          this.props.mappedsetEventLocationOnMap(this.state);
         },
         (error) => this.setState({ error: error.message }),
         { enableHighAccuracy: false, timeout: 200000, maximumAge: 1000 },
@@ -44,19 +42,20 @@ class MapWithSearchBox extends Component {
 
   
   render() {
-    if(this.state.latitude && this.state.longitude){
+    const { latitude, longitude } = this.props.eventData.eventLocation;
+    if(latitude && longitude){
     return (
        <MapView
       provider={MapView.PROVIDER_GOOGLE}
       style={{ flex: 1 }} initialRegion={{
-      latitude:this.state.latitude,
-      longitude:this.state.longitude,
+      latitude:latitude,
+      longitude:longitude,
       latitudeDelta: 1,
       longitudeDelta: 1
      }}>
  
       <MapView.Marker
-        coordinate={{latitude:this.state.latitude,longitude:this.state.longitude}}
+        coordinate={{latitude:latitude,longitude:longitude}}
         title={"Your Location"} description="Some description"
       />
      </MapView> 

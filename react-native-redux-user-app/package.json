@@ -37,19 +37,18 @@
   "dependencies": {
     "@expo/vector-icons": "^6.3.1",
     "expo": "^26.0.0",
-    "native-base": "^2.4.1",
+    "native-base": "^2.4.5",
     "prop-types": "^15.6.1",
     "react": "16.3.0-alpha.1",
     "react-native": "0.54.0",
-    "react-native-customized-image-picker": "^0.1.0",
-    "react-native-google-places": "^2.5.0",
+    "react-native-customized-image-picker": "^0.1.1",
     "react-native-maps": "^0.21.0",
-    "react-navigation": "^1.5.8",
-    "react-navigation-redux-helpers": "^1.0.3",
+    "react-navigation": "^1.5.12",
+    "react-navigation-redux-helpers": "^1.1.1",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
     "redux-persist": "^5.9.1",
     "redux-saga": "^0.16.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.3.0"
   }
 }

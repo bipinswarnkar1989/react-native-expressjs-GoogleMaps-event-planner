@@ -2,7 +2,15 @@ const initalState = {
     isLoading:false,
     events:null,
     errorMsg:null,
-    successMsg:null
+    successMsg:null,
+    createEvent:{
+        eventLocation:{
+            latitude:null,
+            longitude:null,
+            latitudeDelta: 1,
+            longitudeDelta: 1
+        }
+    }
 }
 
 const eventReducer = (state = initalState, action) => {
@@ -50,7 +58,18 @@ const eventReducer = (state = initalState, action) => {
                newEvent:action.payload.event,
                errorMsg:null
            }
-    
+       case 'SET_EVENT_LOCATION_ON_MAP':
+          return {
+              ...state,
+              createEvent:{
+                eventLocation:{
+                    latitude:action.payload.latitude,
+                    longitude:action.payload.longitude,
+                    latitudeDelta: 1,
+                    longitudeDelta: 1
+                }
+            }
+          }
         default:
             return state;
     }

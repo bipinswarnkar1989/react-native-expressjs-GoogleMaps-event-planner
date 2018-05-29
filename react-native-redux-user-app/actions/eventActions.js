@@ -46,3 +46,10 @@ export const addEvent = (event) => {
         event
     }
 }
+
+export const setEventLocationOnMap = (payload) => {
+    return {
+        type:'SET_EVENT_LOCATION_ON_MAP',
+        payload
+    }
+}
