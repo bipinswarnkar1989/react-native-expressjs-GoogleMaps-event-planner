@@ -33,13 +33,15 @@ class SetEventLocation extends Component {
         fetch(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${value}&key=${GOOGLE_PLACES_API_KEY}`)
         .then((results) => {
             results.json().then(d => {
-                alert(JSON.stringify(d))
+                //alert(JSON.stringify(d.predictions));
+                this.props.mappedsetPlacesPredictions(d);
             })
         })
         .catch((error) => console.log(error.message));
     }
     render() {
-        const { createEvent, isLoading, successMsg, errorMsg } = this.props.eventState;
+        const { createEvent, isLoading, successMsg, errorMsg, placesPredictions } = this.props.eventState;
+        
         return (
             <Container>
         <Content>
@@ -68,7 +70,11 @@ class SetEventLocation extends Component {
 					</InputGroup>
 				</View>
         </View>
-        
+        {placesPredictions && 
+           <PlacesSearchResults
+            predictions = {placesPredictions}
+            />
+        }
           </View>
             </View>
             </Content>

@@ -53,3 +53,10 @@ export const setEventLocationOnMap = (payload) => {
         payload
     }
 }
+
+export const setPlacesPredictions = (payload) => {
+    return {
+        type:'SET_PLACES_PREDICTIONS',
+        payload
+    }
+}

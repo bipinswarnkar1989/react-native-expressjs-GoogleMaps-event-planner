@@ -16,6 +16,7 @@ const mapDisPatchToProps  = (dispatch) => {
         mappedNavigate:screen => dispatch(navActions.navigate(screen)),
         mappedaddEvent:event => dispatch(eventActions.addEvent(event)),
         mappedsetEventLocationOnMap:data => dispatch(eventActions.setEventLocationOnMap(data)),
+        mappedsetPlacesPredictions:data => dispatch(eventActions.setPlacesPredictions(data)),
     }
 }
 

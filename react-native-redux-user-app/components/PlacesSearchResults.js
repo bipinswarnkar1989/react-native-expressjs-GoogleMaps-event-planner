@@ -5,6 +5,7 @@ import { List, ListItem, Left, Body, Item } from 'native-base';
 import MIcon from 'react-native-vector-icons/MaterialIcons';
 
 var width = Dimensions.get('window').width; //full width
+var height = Dimensions.get('window').height; //full height
 
 class PlacesSearchResults extends Component {
   render() {
@@ -18,7 +19,7 @@ class PlacesSearchResults extends Component {
                     <View>
                         <ListItem button avatar>
                           <Left>
-                              <MIcon name={location-on} />
+                              <MIcon name="location-on" />
                           </Left>
                           <Body>
                               <Text>{item.description}</Text>
@@ -35,10 +36,10 @@ class PlacesSearchResults extends Component {
 
 const styles = StyleSheet.create({
     wrapper:{
-       top:160,
+       top:75,
        position:'absolute',
        width:width,
-       height:1000,
+       height:height,
        backgroundColor:'white',
        opacity:0.9
     }

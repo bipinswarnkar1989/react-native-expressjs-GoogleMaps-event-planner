@@ -67,10 +67,18 @@ const eventReducer = (state = initalState, action) => {
                     longitude:action.payload.longitude,
                     latitudeDelta: 1,
                     longitudeDelta: 1
-                },
-                placesPredictions:null
-            }
+                }
+            },
+            placesPredictions:null
           }
+
+      case 'SET_PLACES_PREDICTIONS':
+        return {
+            ...state,
+            createEvent:state.createEvent,
+            placesPredictions:action.payload.predictions
+        }
+        
         default:
             return state;
     }
