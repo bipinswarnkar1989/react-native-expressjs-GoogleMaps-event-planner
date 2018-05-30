@@ -21,6 +21,8 @@ import MapWithSearchBox from './MapWithSearchBox';
 
 import FIcon from "react-native-vector-icons/FontAwesome";
 
+import PlacesSearchResults from './PlacesSearchResults';
+
 var width = Dimensions.get("window").width; //full width
 var height = Dimensions.get("window").height;
 
@@ -66,6 +68,7 @@ class SetEventLocation extends Component {
 					</InputGroup>
 				</View>
         </View>
+        
           </View>
             </View>
             </Content>
