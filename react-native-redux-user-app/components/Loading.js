@@ -16,7 +16,6 @@ export default class Loading extends Component {
       <View style={styles.container}>
         <View style={this.overlayStyle()}>
         <View style={[styles.spinnerContainer, this.props.spinnerContainerStyles]}>
-        <Text>Loading...</Text>
           <ActivityIndicator style={styles.spinner} size="large" color="blue" />
         </View>
       </View>

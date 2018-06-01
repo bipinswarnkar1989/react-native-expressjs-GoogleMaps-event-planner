@@ -30,14 +30,11 @@ const GOOGLE_PLACES_API_KEY = 'AIzaSyDhPHD3lGTDQe1mOwo7L-SD7dmpKsDPUsE';
 
 class SetEventLocation extends Component {
     handleInput(value){
-        fetch(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${value}&key=${GOOGLE_PLACES_API_KEY}`)
-        .then((results) => {
-            results.json().then(d => {
-                //alert(JSON.stringify(d.predictions));
-                this.props.mappedsetPlacesPredictions(d);
-            })
-        })
-        .catch((error) => console.log(error.message));
+        try {
+            this.props.mappedsetPlacesPredictions(value);
+        } catch (error) {
+            console.log(error.message)
+        }
     }
     render() {
         const { createEvent, isLoading, successMsg, errorMsg, placesPredictions } = this.props.eventState;
@@ -70,7 +67,7 @@ class SetEventLocation extends Component {
 					</InputGroup>
 				</View>
         </View>
-        {placesPredictions && 
+        {placesPredictions && placesPredictions.length > 0 &&
            <PlacesSearchResults
             predictions = {placesPredictions}
             />

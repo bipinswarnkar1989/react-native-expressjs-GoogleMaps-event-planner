@@ -1,15 +1,15 @@
 import { takeLatest, put, call, select } from 'redux-saga/effects';
 const GOOGLE_PLACES_API_KEY = 'AIzaSyDhPHD3lGTDQe1mOwo7L-SD7dmpKsDPUsE';
 
-const requestPlaces = async () => {
-    const resp =  await fetch(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${value}&key=${GOOGLE_PLACES_API_KEY}`);
+const requestPlaces = async (input) => {
+    const resp =  await fetch(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${input}&key=${GOOGLE_PLACES_API_KEY}`);
     const json = await resp.json();
     return json;
 }
 
 function *getAutoComplete(action) {
     try {
-        const response = yield call(requestPlaces, action.event);
+        const response = yield call(requestPlaces, action.input);
         if (response) {
             yield put({
                 type:'SET_PLACES_PREDICTIONS',
