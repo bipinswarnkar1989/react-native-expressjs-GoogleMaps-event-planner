@@ -72,11 +72,30 @@ const eventReducer = (state = initalState, action) => {
             placesPredictions:null
           }
 
+      case 'REQUEST_PLACES_AUTO_COMPLETE':
+        return {
+            ...state,
+            isLoading:true,
+            errorMsg:null,
+            successMsg:null,
+        }
+    
+      case 'FAILED_PLACES_AUTO_COMPLETE':
+        return {
+            ...state,
+            isLoading:false,
+            errorMsg:action.payload.message,
+            successMsg:null,
+        }
+
       case 'SET_PLACES_PREDICTIONS':
         return {
             ...state,
             createEvent:state.createEvent,
-            placesPredictions:action.payload.predictions
+            placesPredictions:action.payload.predictions,
+            isLoading:false,
+            errorMsg:null,
+            successMsg:null,
         }
         
         default:

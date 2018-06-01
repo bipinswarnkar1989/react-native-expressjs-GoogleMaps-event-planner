@@ -54,9 +54,8 @@ export const setEventLocationOnMap = (payload) => {
     }
 }
 
-export const setPlacesPredictions = (payload) => {
+export const setPlacesPredictions = () => {
     return {
-        type:'SET_PLACES_PREDICTIONS',
-        payload
+        type:'REQUEST_PLACES_AUTO_COMPLETE'
     }
 }
