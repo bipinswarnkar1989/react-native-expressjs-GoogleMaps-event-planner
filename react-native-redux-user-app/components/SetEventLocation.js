@@ -54,6 +54,14 @@ class SetEventLocation extends Component {
         });
         this.props.mappedsetPlacesPredictions('');
     }
+
+    removeInput(){
+        this.setState({
+            selectedPlace:null
+        });
+        this.props.mappedsetPlacesPredictions('');
+    }
+
     render() {
         const { createEvent, isLoading, successMsg, errorMsg, placesPredictions } = this.props.eventState;
         
@@ -82,6 +90,9 @@ class SetEventLocation extends Component {
 							onChangeText={(value) => this.handleInput(value)}
 							value={this.state.selectedPlace}
 						/>
+                        {this.state.selectedPlace && 
+                          <Icon name='ios-close-circle' onPress={() => this.removeInput()} style={{color:'#FF5E3A'}}/>
+                        }
 					</InputGroup>
 				</View>
         </View>
