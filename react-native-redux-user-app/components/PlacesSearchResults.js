@@ -17,7 +17,7 @@ class PlacesSearchResults extends Component {
             renderRow={(item) => {
                 return (
                     <View>
-                        <ListItem button avatar>
+                        <ListItem onPress={() => this.props.setSelectedPlace(item)} button avatar>
                           <Left>
                               <MIcon name="location-on" />
                           </Left>

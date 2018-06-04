@@ -29,12 +29,30 @@ var height = Dimensions.get("window").height;
 const GOOGLE_PLACES_API_KEY = 'AIzaSyDhPHD3lGTDQe1mOwo7L-SD7dmpKsDPUsE';
 
 class SetEventLocation extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            selectedPlace:null
+        }
+    }
+    
     handleInput(value){
         try {
+            this.setState({
+                selectedPlace:value
+            });
             this.props.mappedsetPlacesPredictions(value);
         } catch (error) {
             console.log(error.message)
         }
+    }
+
+    setSelectedPlace(place){
+        let description = place.description;
+        this.setState({
+            selectedPlace:description
+        });
+        this.props.mappedsetPlacesPredictions('');
     }
     render() {
         const { createEvent, isLoading, successMsg, errorMsg, placesPredictions } = this.props.eventState;
@@ -62,7 +80,7 @@ class SetEventLocation extends Component {
 							style={styles.inputSearch}
 							placeholder="Choose event location"
 							onChangeText={(value) => this.handleInput(value)}
-							
+							value={this.state.selectedPlace}
 						/>
 					</InputGroup>
 				</View>
@@ -70,6 +88,7 @@ class SetEventLocation extends Component {
         {placesPredictions && placesPredictions.length > 0 &&
            <PlacesSearchResults
             predictions = {placesPredictions}
+            setSelectedPlace={e => this.setSelectedPlace(e)}
             />
         }
           </View>
