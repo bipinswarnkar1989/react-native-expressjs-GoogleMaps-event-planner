@@ -9,3 +9,5 @@ export const multipartHeaders  =  {
     'Accept': 'application/json',
     'Content-Type': 'multipart/form-data'
   }
+
+export const GOOGLE_PLACES_API_KEY = 'AIzaSyDhPHD3lGTDQe1mOwo7L-SD7dmpKsDPUsE';

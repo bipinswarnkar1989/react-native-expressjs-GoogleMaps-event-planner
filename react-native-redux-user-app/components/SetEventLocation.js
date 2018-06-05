@@ -47,7 +47,7 @@ class SetEventLocation extends Component {
         }
     }
 
-    setSelectedPlace(place){
+    setSelectedPlace(place){alert(place.place_id)
         let description = place.description;
         this.setState({
             selectedPlace:description
