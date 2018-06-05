@@ -47,7 +47,7 @@ class MapWithSearchBox extends Component {
     return (
        <MapView
       provider={MapView.PROVIDER_GOOGLE}
-      style={{ flex: 1 }} initialRegion={{
+      style={{ flex: 1 }} region={{
       latitude:latitude,
       longitude:longitude,
       latitudeDelta: 1,

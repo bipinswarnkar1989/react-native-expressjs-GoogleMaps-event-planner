@@ -60,3 +60,10 @@ export const setPlacesPredictions = (input) => {
         input
     }
 }
+
+export const requestPlaceDetails = (placeid) => {
+    return {
+        type:'REQUEST_GET_PLACE_DETAILS',
+        placeid
+    }
+}

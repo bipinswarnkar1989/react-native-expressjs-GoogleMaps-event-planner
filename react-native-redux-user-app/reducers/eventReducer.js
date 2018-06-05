@@ -97,6 +97,39 @@ const eventReducer = (state = initalState, action) => {
             errorMsg:null,
             successMsg:null,
         }
+
+     case 'REQUEST_GET_PLACE_DETAILS':
+        return {
+            ...state,
+            isLoading:true,
+            errorMsg:null,
+            successMsg:null,
+        }
+
+     case 'SET_PLACE_DETAILS':
+        return {
+        ...state,
+        isLoading:false,
+        errorMsg:null,
+        successMsg:'Place Details Fetched Successfully',
+        createEvent:{
+          eventLocation:{
+              latitude:action.payload.result.geometry.location.lat,
+              longitude:action.payload.result.geometry.location.lng,
+              latitudeDelta: 1,
+              longitudeDelta: 1
+          }
+      },
+      placesPredictions:null
+    }
+
+    case 'FAILED_GET_PLACE_DETAILS':
+        return {
+            ...state,
+            isLoading:false,
+            errorMsg:action.payload.message,
+            successMsg:null,
+        }
         
         default:
             return state;

@@ -2,7 +2,7 @@ import { takeLatest, put, call } from 'redux-saga/effects';
 import { GOOGLE_PLACES_API_KEY } from '../../utils/constants';
 
 const requestPlaceDetails = async (placeid) => {
-    const resp = await fetch('https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJD7fiBh9u5kcRYJSMaMOCCwQ&key=AIzaSyDhPHD3lGTDQe1mOwo7L-SD7dmpKsDPUsE');
+    const resp = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?placeid=${placeid}&key=${GOOGLE_PLACES_API_KEY}`);
     const json = await resp.json();
     return json;
 }
