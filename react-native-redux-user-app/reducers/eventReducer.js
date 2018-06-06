@@ -8,7 +8,9 @@ const initalState = {
             latitude:null,
             longitude:null,
             latitudeDelta: 1,
-            longitudeDelta: 1
+            longitudeDelta: 1,
+            title:null,
+            description:null
         }
     }
 }
@@ -66,7 +68,9 @@ const eventReducer = (state = initalState, action) => {
                     latitude:action.payload.latitude,
                     longitude:action.payload.longitude,
                     latitudeDelta: 1,
-                    longitudeDelta: 1
+                    longitudeDelta: 1,
+                    title:null,
+                    description:null
                 }
             },
             placesPredictions:null
@@ -117,7 +121,9 @@ const eventReducer = (state = initalState, action) => {
               latitude:action.payload.result.geometry.location.lat,
               longitude:action.payload.result.geometry.location.lng,
               latitudeDelta: 1,
-              longitudeDelta: 1
+              longitudeDelta: 1,
+              title:action.payload.result.name,
+              description:action.payload.result.formatted_address,
           }
       },
       placesPredictions:null

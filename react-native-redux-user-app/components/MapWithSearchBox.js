@@ -42,7 +42,7 @@ class MapWithSearchBox extends Component {
 
   
   render() {
-    const { latitude, longitude } = this.props.eventData.eventLocation;
+    const { latitude, longitude, title, description } = this.props.eventData.eventLocation;
     if(latitude && longitude){
     return (
        <MapView
@@ -56,7 +56,7 @@ class MapWithSearchBox extends Component {
  
       <MapView.Marker
         coordinate={{latitude:latitude,longitude:longitude}}
-        title={"Your Location"} description="Some description"
+        title={title ? title : "Your Location"} description={description ? description :""}
       />
      </MapView> 
      
