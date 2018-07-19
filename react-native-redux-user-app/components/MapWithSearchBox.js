@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Dimensions  } from 'react-native';
-//import MapView,{ Marker } from 'react-native-maps';
-import {  MapView } from 'expo';
+import MapView,{ Marker } from 'react-native-maps';
+//import {  MapView } from 'expo';
 
 
 class MapWithSearchBox extends Component {
