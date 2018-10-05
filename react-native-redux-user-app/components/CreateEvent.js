@@ -15,7 +15,7 @@ import {
 } from 'native-base';
 //import ImagePicker from 'react-native-customized-image-picker';
 
-import { ImagePicker } from 'expo';
+import { ImagePicker } from 'react-native-image-picker';
 import Loading from './Loading';
 import AppHeader from './AppHeader';
 import MapWithSearchBox from './MapWithSearchBox';
@@ -46,52 +46,71 @@ class CreateEvent extends Component {
 }
 
 startCamera = async() => {
-    let result = await ImagePicker.launchCameraAsync({
-        allowsEditing: true,
-        aspect: [4, 3],
-      });
-  
-      console.log(result);
-  
-      if (!result.cancelled) {
-        this.setState({ image: result.uri });
+    // Launch Camera:
+    await ImagePicker.launchCamera(options, (response)  => {
+      // Same code as in above section!
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
       }
-}
+      else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+      }
+      else if (response.customButton) {
+        console.log('User tapped custom button: ', response.customButton);
+      }
+      else {
+        let source = { uri: response.uri };
+    
+        // You can also display the image using data:
+        // let source = { uri: 'data:image/jpeg;base64,' + response.data };
+        console.log(source)
+        this.setState({
+          image: source
+        });
+      }
 
-gotoGallery = async() => {
-    // ImagePicker.openPicker({
-  
-    // }).then(image => {
-    //   console.log(image);
-    // });
-    let result = await ImagePicker.launchImageLibraryAsync({
-        mediaTypes:"Images",
-        allowsEditing: true,
-        aspect: [4, 3],
-        quality:0.8,
-        base64 :true,
-      });
-  
-      console.log(result);
-  
-      if (!result.cancelled) {
-        this.setState({ image: result.uri });
-      }
+    });
+
 }
+gotoGallery = async() => {
+  await ImagePicker.launchImageLibrary(options, (response)  => {
+    // Same code as in above section!
+    if (response.didCancel) {
+      console.log('User cancelled image picker');
+    }
+    else if (response.error) {
+      console.log('ImagePicker Error: ', response.error);
+    }
+    else if (response.customButton) {
+      console.log('User tapped custom button: ', response.customButton);
+    }
+    else {
+      let source = { uri: response.uri };
+  
+      // You can also display the image using data:
+      // let source = { uri: 'data:image/jpeg;base64,' + response.data };
+      console.log(source)
+      this.setState({
+        image: source
+      });
+    }
+});
+};
 
 handleAddEvent = async() => {
-    const formData = new FormData();
-    formData.append('name', this.state.name);
-    formData.append('description', this.state.description);
-    formData.append('image', {
-        uri: this.state.image,
-        type: 'image/jpeg', // or photo.type
-        name: this.state.name+'-image.jpeg'
-      });
-    formData.append('creator', this.props.userState.user._id);
-    await this.props.mappedaddEvent(formData);
-    this.props.navigation.navigate('SetEventLocation');
+  const formData = new FormData();
+  formData.append('name', this.state.name);
+  formData.append('description', this.state.description);
+  formData.append('image', {
+      uri: this.state.image,
+      type: 'image/jpeg', // or photo.type
+      name: this.state.name+'-image.jpeg'
+    });
+  formData.append('creator', this.props.userState.user._id);
+  await this.props.mappedaddEvent(formData);
+  this.props.navigation.navigate('SetEventLocation');
 }
+
   render() {
     const { newEvent, isLoading, successMsg, errorMsg } = this.props.eventState;
     return (

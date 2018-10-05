@@ -1,0 +1,4 @@
+#Fri Oct 05 19:25:16 IST 2018
+base.0=/Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
