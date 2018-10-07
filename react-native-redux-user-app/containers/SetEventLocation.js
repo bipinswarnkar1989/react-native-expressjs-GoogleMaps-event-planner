@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SetEventLocation from '../components/SetEventLocation';
 import * as eventActions from '../actions/eventActions';
