@@ -40,8 +40,8 @@ import * as userActions from '../actions/userActions';
       return (
         <Container>
           <Content bounces={false}
-            style={{ flex: 1, backgroundColor: "#fff", top: -1 }}>
-          <View style={{ backgroundColor:"#FF5B6C", height: 24 }} />
+            style={{ flex: 1, backgroundColor: "#fff", top: -1, padding: 2 }}>
+          <View style={{ backgroundColor:"#FF5B6C", height: 1 }} />
             <View style={{position:"relative"}}>
             <Image
               source={{
