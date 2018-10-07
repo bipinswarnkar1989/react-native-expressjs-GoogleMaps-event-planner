@@ -65,6 +65,7 @@ ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/
 		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:23:17-81
 uses-sdk
 INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [EventPlanner:react-native-vector-icons:unspecified] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/EventPlanner/react-native-vector-icons/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.0.1] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
