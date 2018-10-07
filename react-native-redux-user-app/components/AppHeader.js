@@ -14,7 +14,13 @@ export default class AppHeader extends Component {
   render() {
     return (
       <View>
+     
         <Header  style={[{ backgroundColor: '#FF5B6C', height: 70 }, styles.androidHeader]}>
+        <StatusBar
+     backgroundColor="#FF5B6C"
+     barStyle="light-content"
+     hidden = {false}
+   />
           <Left>
             <Icon name="menu" onPress={() => this.props.drawerOpen()} 
              style={{ paddingLeft: 10, color:'white' }} 
@@ -39,7 +45,7 @@ const styles = StyleSheet.create({
   androidHeader: {
     ...Platform.select({
       android: {
-        paddingTop: StatusBar.currentHeight,
+        //paddingTop: StatusBar.currentHeight,
       }
     })
   }
