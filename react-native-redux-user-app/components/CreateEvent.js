@@ -5,17 +5,19 @@ import {
     StyleSheet,
     TextInput,
     TouchableOpacity,
+    PixelRatio,
+    Image,
      } from 'react-native';
 import {
     Card,
     Container,
-  Content,
-  Icon,
-  Button 
+    Content,
+    Icon,
+    Button 
 } from 'native-base';
 //import ImagePicker from 'react-native-customized-image-picker';
 
-import { ImagePicker } from 'react-native-image-picker';
+import ImagePicker  from 'react-native-image-picker';
 import Loading from './Loading';
 import AppHeader from './AppHeader';
 import MapWithSearchBox from './MapWithSearchBox';
@@ -45,9 +47,17 @@ class CreateEvent extends Component {
     })
 }
 
-startCamera = async() => {
+startCamera () {
+  let options = {
+    quality: 1.0,
+    maxWidth: 500,
+    maxHeight: 500,
+    storageOptions: {
+      skipBackup: true
+    }
+  };
     // Launch Camera:
-    await ImagePicker.launchCamera(options, (response)  => {
+     ImagePicker.launchCamera(options, (response)  => {
       // Same code as in above section!
       if (response.didCancel) {
         console.log('User cancelled image picker');
@@ -72,8 +82,16 @@ startCamera = async() => {
     });
 
 }
-gotoGallery = async() => {
-  await ImagePicker.launchImageLibrary(options, (response)  => {
+gotoGallery (){
+  let options = {
+    quality: 1.0,
+    maxWidth: 500,
+    maxHeight: 500,
+    storageOptions: {
+      skipBackup: true
+    }
+  };
+   ImagePicker.launchImageLibrary(options, (response)  => {
     // Same code as in above section!
     if (response.didCancel) {
       console.log('User cancelled image picker');
@@ -86,13 +104,13 @@ gotoGallery = async() => {
     }
     else {
       let source = { uri: response.uri };
-  
-      // You can also display the image using data:
-      // let source = { uri: 'data:image/jpeg;base64,' + response.data };
-      console.log(source)
-      this.setState({
-        image: source
-      });
+    
+        // You can also display the image using data:
+        // let source = { uri: 'data:image/jpeg;base64,' + response.data };
+        console.log(source)
+        this.setState({
+          image: source
+        });
     }
 });
 };
@@ -141,6 +159,13 @@ handleAddEvent = async() => {
         }}
         />
         <View style={styles.imageContainer}>
+        { this.state.image !== null  &&
+        <View style={[styles.eventImg, styles.eventImgContainer, {marginBottom: 20, marginTop: 10}]}>
+          
+            <Image style={styles.eventImg} source={this.state.image} />
+        
+          </View>
+        }
         {this.state.imageSelectOptions && 
            <View style={styles.imageSelectOptions}>
            <View>
@@ -247,6 +272,18 @@ const styles = StyleSheet.create({
         fontWeight: '300',
         color:'#DE005E'
       },
+      eventImgContainer: {
+        borderColor: '#9B9B9B',
+        borderWidth: 1 / PixelRatio.get(),
+        justifyContent: 'center',
+        alignItems: 'center'
+      },
+      eventImg: {
+        //borderRadius: 75,
+        borderRadius: 10,
+        width: '100%',
+        height: 200,
+      }
 })
 
  const autocompleteStyles = StyleSheet.create({

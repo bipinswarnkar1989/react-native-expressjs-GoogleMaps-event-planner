@@ -199,5 +199,14 @@
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
         <dex dex="/Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_c9d58dcbc7bb15c440149d60003a4b4aefcec172.jar" />
     </item>
+    <item
+        is-multidex="false"
+        jar="/Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/EventPlanner/react-native-image-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f8c5b088a2757d8e897dd32c18fb783d231c3b35">
+        <dex dex="/Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/pre-dexed/debug/EventPlanner-react-native-image-picker-unspecified_0a5dfa73fbe6a378c830a26027dc14ad36d8c438.jar" />
+    </item>
 
 </items>

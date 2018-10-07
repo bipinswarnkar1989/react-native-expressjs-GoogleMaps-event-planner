@@ -1,91 +1,243 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-26:12
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
+MERGED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-vector-icons] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/9d12a30207c4bde765ff170f43585b8e/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7956066a1707a45f3cb4ecc74e6d979d/AndroidManifest.xml:17:1-24:12
+MERGED from [:react-native-maps] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-base:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.1.aar/fe27eb2c76edbd65cde8c68c843f0ce1/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.0.1.aar/d442999a9cd87c97b603a1cce2f3480c/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/f00ebe0c0bc4b4af3a34912d6cd49d63/AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:24.0.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/856eb9514991acbb935013abb6c1c3e4/AndroidManifest.xml:17:1-27:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/d7ea2eed7478b3299af4a8f5e465db6b/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/993f7d16678488c5b32ca457e0bda99d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/56716b379c5ca63d110eaaaa25696133/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/fece9255faf07bc6c9312632a1176b35/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b0273684933acaeead6618c5162d8dcb/AndroidManifest.xml:1:1-3:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/067a33165894b471dd9f57ebb8eefedc/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/d201d598ae044a6056b531282c738b30/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/eb9fc1e7e06d713865ad8db6601460df/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/e0ecbff16ef344483e50d57c8c7e1c39/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/e469d6545c74041972cb39e85d760074/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
 	package
 		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:2:5-31
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:11-69
-	android:versionCode
-		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:react-native-maps] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-67
+MERGED from [:react-native-maps] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/9d12a30207c4bde765ff170f43585b8e/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/9d12a30207c4bde765ff170f43585b8e/AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.CAMERA
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:6:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:8:22-77
+uses-feature#android.hardware.camera
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:9:5-60
+	android:name
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:9:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:10:1-66
+	android:name
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:10:15-63
 application
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:7:5-24:19
-MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/org.webkit/android-jsc/r174650/AndroidManifest.xml:2:3-17
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:12:5-33:19
+MERGED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/9d12a30207c4bde765ff170f43585b8e/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/9d12a30207c4bde765ff170f43585b8e/AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7956066a1707a45f3cb4ecc74e6d979d/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7956066a1707a45f3cb4ecc74e6d979d/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.1.aar/fe27eb2c76edbd65cde8c68c843f0ce1/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.1.aar/fe27eb2c76edbd65cde8c68c843f0ce1/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.0.1.aar/d442999a9cd87c97b603a1cce2f3480c/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.0.1.aar/d442999a9cd87c97b603a1cce2f3480c/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/f00ebe0c0bc4b4af3a34912d6cd49d63/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/f00ebe0c0bc4b4af3a34912d6cd49d63/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:24.0.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/856eb9514991acbb935013abb6c1c3e4/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.0.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/856eb9514991acbb935013abb6c1c3e4/AndroidManifest.xml:25:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/fece9255faf07bc6c9312632a1176b35/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/fece9255faf07bc6c9312632a1176b35/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b0273684933acaeead6618c5162d8dcb/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b0273684933acaeead6618c5162d8dcb/AndroidManifest.xml:2:3-17
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/067a33165894b471dd9f57ebb8eefedc/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/067a33165894b471dd9f57ebb8eefedc/AndroidManifest.xml:7:5-11:19
 	android:label
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:9:7-39
-	android:allowBackup
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:14:7-39
 	android:icon
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:10:7-41
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:15:7-41
+	android:allowBackup
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:16:7-34
 	android:theme
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:17:7-38
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:8:7-38
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:13:7-38
 activity#com.eventplanner.MainActivity
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:13:7-22:18
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:18:7-27:18
 	android:label
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:20:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:17:9-51
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:22:9-51
 	android:configChanges
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:16:9-79
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:21:9-79
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:14:9-37
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:18:9-21:25
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:19:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:23:9-26:25
 action#android.intent.action.MAIN
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:19:13-65
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:24:13-65
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:19:21-62
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:24:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:20:13-73
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:25:13-73
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:20:23-70
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:25:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:23:7-84
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:28:7-84
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:23:17-81
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:28:17-81
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:30:3-32:62
+	android:value
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:32:5-60
+	android:name
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:31:5-50
 uses-sdk
 INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [EventPlanner:react-native-vector-icons:unspecified] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/EventPlanner/react-native-vector-icons/unspecified/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:2:3-70
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/9d12a30207c4bde765ff170f43585b8e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/9d12a30207c4bde765ff170f43585b8e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7956066a1707a45f3cb4ecc74e6d979d/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7956066a1707a45f3cb4ecc74e6d979d/AndroidManifest.xml:20:5-43
+MERGED from [:react-native-maps] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.1.aar/fe27eb2c76edbd65cde8c68c843f0ce1/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.1.aar/fe27eb2c76edbd65cde8c68c843f0ce1/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.0.1.aar/d442999a9cd87c97b603a1cce2f3480c/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.0.1.aar/d442999a9cd87c97b603a1cce2f3480c/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/f00ebe0c0bc4b4af3a34912d6cd49d63/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/f00ebe0c0bc4b4af3a34912d6cd49d63/AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:24.0.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/856eb9514991acbb935013abb6c1c3e4/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.0.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/856eb9514991acbb935013abb6c1c3e4/AndroidManifest.xml:21:5-23:54
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/d7ea2eed7478b3299af4a8f5e465db6b/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/d7ea2eed7478b3299af4a8f5e465db6b/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/993f7d16678488c5b32ca457e0bda99d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/993f7d16678488c5b32ca457e0bda99d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/56716b379c5ca63d110eaaaa25696133/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/56716b379c5ca63d110eaaaa25696133/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/fece9255faf07bc6c9312632a1176b35/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/fece9255faf07bc6c9312632a1176b35/AndroidManifest.xml:2:3-70
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/067a33165894b471dd9f57ebb8eefedc/AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/067a33165894b471dd9f57ebb8eefedc/AndroidManifest.xml:5:5-43
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/d201d598ae044a6056b531282c738b30/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/d201d598ae044a6056b531282c738b30/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/eb9fc1e7e06d713865ad8db6601460df/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/eb9fc1e7e06d713865ad8db6601460df/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/e0ecbff16ef344483e50d57c8c7e1c39/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/e0ecbff16ef344483e50d57c8c7e1c39/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/e469d6545c74041972cb39e85d760074/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/e469d6545c74041972cb39e85d760074/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:24.0.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/856eb9514991acbb935013abb6c1c3e4/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
-android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+provider#com.imagepicker.FileProvider
+ADDED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-60
+	android:exported
+		ADDED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-56
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
+	android:resource
+		ADDED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:17-55
+	android:name
+		ADDED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:17-67
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:react-native-maps] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [:react-native-maps] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:19:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.0.1.aar/1b7689b64e30655e5d95468cac957259/AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.1.aar/fe27eb2c76edbd65cde8c68c843f0ce1/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.1.aar/fe27eb2c76edbd65cde8c68c843f0ce1/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.1.aar/fe27eb2c76edbd65cde8c68c843f0ce1/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.1.aar/fe27eb2c76edbd65cde8c68c843f0ce1/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/f00ebe0c0bc4b4af3a34912d6cd49d63/AndroidManifest.xml:20:9-121
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/067a33165894b471dd9f57ebb8eefedc/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/067a33165894b471dd9f57ebb8eefedc/AndroidManifest.xml:8:9-10:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/f00ebe0c0bc4b4af3a34912d6cd49d63/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/f00ebe0c0bc4b4af3a34912d6cd49d63/AndroidManifest.xml:20:20-65
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4

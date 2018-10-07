@@ -40,7 +40,7 @@
     "react": "16.3.0-alpha.1",
     "react-native": "0.54.0",
     "react-native-customized-image-picker": "^0.1.1",
-    "react-native-image-picker": "^0.26.10",
+    "react-native-image-picker": "^0.27.1",
     "react-native-maps": "^0.21.0",
     "react-navigation": "^1.5.12",
     "react-navigation-redux-helpers": "^1.1.1",
@@ -51,6 +51,8 @@
     "redux-thunk": "^2.3.0"
   },
   "rnpm": {
-    "assets": ["./assets/Fonts"]
-  }  
+    "assets": [
+      "./assets/Fonts"
+    ]
+  }
 }
