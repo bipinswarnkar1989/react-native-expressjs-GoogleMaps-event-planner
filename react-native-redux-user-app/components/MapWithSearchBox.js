@@ -19,7 +19,12 @@ class MapWithSearchBox extends Component {
 
   componentDidMount() {
      this.getCurrentLocation();
+     this.watchLocationChange();
    }
+
+   componentWillUnmount() {
+    navigator.geolocation.clearWatch(this.watchId);
+  }
 
    getCurrentLocation(){
     navigator.geolocation.getCurrentPosition(
@@ -43,6 +48,22 @@ class MapWithSearchBox extends Component {
     console.log(mapRegion);
     this.setState({ mapRegion });
   };
+
+  watchLocationChange() {
+    this.watchId = navigator.geolocation.watchPosition(
+      (position) => {
+        this.setState({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          error: null,
+        });
+      },
+      (error) => this.setState({ error: error.message }),
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000, distanceFilter: 10 },
+    );
+  }
+
+  
 
   
   render() {
