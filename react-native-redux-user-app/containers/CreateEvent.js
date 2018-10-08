@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import CreateEvent from '../components/CreateEvent';
 import * as eventActions from '../actions/eventActions';
+import * as navActions from '../actions/navActions';
 
 const  mapStateToProps = (state) => {
     return {

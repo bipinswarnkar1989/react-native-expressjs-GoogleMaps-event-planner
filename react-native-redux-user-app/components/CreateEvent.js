@@ -115,17 +115,20 @@ gotoGallery (){
 });
 };
 
-handleAddEvent = async() => {
+handleAddEvent () {//alert(JSON.stringify(this.state.image))
+  const imageUri = this.state.image.uri;
+  const imageUriParts = imageUri.split('.');
+  const fileType = imageUriParts[imageUriParts.length - 1];
   const formData = new FormData();
   formData.append('name', this.state.name);
   formData.append('description', this.state.description);
   formData.append('image', {
-      uri: this.state.image,
-      type: 'image/jpeg', // or photo.type
-      name: this.state.name+'-image.jpeg'
-    });
+    uri: imageUri,
+    name: `eventImage.${fileType}`,
+    type: `image/${fileType}`,
+  });
   formData.append('creator', this.props.userState.user._id);
-  await this.props.mappedaddEvent(formData);
+  this.props.mappedaddEvent(formData);
   this.props.navigation.navigate('SetEventLocation');
 }
 

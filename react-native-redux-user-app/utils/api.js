@@ -16,17 +16,19 @@ export default class Api {
        }
     }
 
-    postFormData = async (url, body, headers) => {
+    postFormData (url, body, headers)  {
         try {
-          let resp = await fetch(url, {
+             return fetch(url, {
                  method:'post',
                  body:body,
-                 headers:headers
+                 headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'multipart/form-data',
+                  }
              });
-         let json = await resp.json();
-         return json;
+         
         } catch (error) {
-            alert(error.message);
+            alert('Post Error: '+error.message);
             console.log(error);
         }
      }

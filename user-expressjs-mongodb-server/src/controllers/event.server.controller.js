@@ -63,11 +63,11 @@ export default class eventController {
                 else {
                     if (event) {
                         console.log('Event created successfully: '+ JSON.stringify(event));
-                        if (req.file) {
-                            fs.unlink(req.file.path, (err) => {
-                                if(!err) console.log(req.file.path +' was deleted');
-                            });
-                        }
+                        // if (req.file) {
+                        //     fs.unlink(req.file.path, (err) => {
+                        //         if(!err) console.log(req.file.path +' was deleted');
+                        //     });
+                        // }
                         return  res.json({
                             success:true,
                             message:'Event Created Successfully',
