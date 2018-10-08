@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-36:12
 MERGED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-vector-icons] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/9d12a30207c4bde765ff170f43585b8e/AndroidManifest.xml:2:1-15:12
@@ -24,20 +24,20 @@ MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/bipinswarnkar/.gradle/cach
 MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/eb9fc1e7e06d713865ad8db6601460df/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/e0ecbff16ef344483e50d57c8c7e1c39/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/e469d6545c74041972cb39e85d760074/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-36:12
 	package
 		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:2:5-31
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-36:12
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-36:12
 		INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -67,16 +67,20 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:8:5-80
 	android:name
 		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:8:22-77
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:9:22-76
 uses-feature#android.hardware.camera
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:9:5-60
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:10:5-60
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:9:19-57
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:10:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:10:1-66
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:11:1-66
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:10:15-63
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:11:15-63
 application
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:12:5-33:19
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:13:5-34:19
 MERGED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [com.facebook.react:react-native:0.54.0] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/react-native-0.54.0.aar/9d12a30207c4bde765ff170f43585b8e/AndroidManifest.xml:13:5-20
@@ -100,45 +104,45 @@ MERGED from [org.webkit:android-jsc:r174650] /Users/bipinswarnkar/.gradle/caches
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/067a33165894b471dd9f57ebb8eefedc/AndroidManifest.xml:7:5-11:19
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/067a33165894b471dd9f57ebb8eefedc/AndroidManifest.xml:7:5-11:19
 	android:label
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:14:7-39
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:15:7-39
 	android:icon
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:15:7-41
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:16:7-41
 	android:allowBackup
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:16:7-34
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:17:7-34
 	android:theme
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:17:7-38
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:18:7-38
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:13:7-38
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:14:7-38
 activity#com.eventplanner.MainActivity
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:18:7-27:18
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:19:7-28:18
 	android:label
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:20:9-41
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:21:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:22:9-51
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:23:9-51
 	android:configChanges
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:21:9-79
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:22:9-79
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:19:9-37
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:20:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:23:9-26:25
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:24:9-27:25
 action#android.intent.action.MAIN
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:24:13-65
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:25:13-65
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:24:21-62
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:25:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:25:13-73
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:26:13-73
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:25:23-70
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:26:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:28:7-84
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:29:7-84
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:28:17-81
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:29:17-81
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:30:3-32:62
+ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:31:3-33:62
 	android:value
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:32:5-60
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:33:5-60
 	android:name
-		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:31:5-50
+		ADDED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:32:5-50
 uses-sdk
 INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml
@@ -240,4 +244,4 @@ MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/bipinswarnka
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:10.0.1] /Users/bipinswarnkar/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/f00ebe0c0bc4b4af3a34912d6cd49d63/AndroidManifest.xml:20:20-65
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-35:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/bipinswarnkar/react-native-expressjs-GoogleMaps-event-planner/react-native-redux-user-app/android/app/src/main/AndroidManifest.xml:1:1-36:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4

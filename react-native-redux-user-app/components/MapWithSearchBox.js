@@ -3,6 +3,9 @@ import { View, Text, StyleSheet, Dimensions  } from 'react-native';
 import MapView,{ Marker } from 'react-native-maps';
 //import {  MapView } from 'expo';
 
+var width = Dimensions.get('window').width; //full width
+var height = Dimensions.get('window').height; //full height
+
 
 class MapWithSearchBox extends Component {
   constructor(props) {
@@ -22,13 +25,14 @@ class MapWithSearchBox extends Component {
     navigator.geolocation.getCurrentPosition(
         (position) => {
           console.log("wokeeey");
-          console.log(position);alert(JSON.stringify(position))
+          console.log(position);
           this.setState({
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
             error: null,
+          }, () => {
+            this.props.mappedsetEventLocationOnMap(this.state);
           });
-          this.props.mappedsetEventLocationOnMap(this.state);
         },
         (error) => this.setState({ error: error.message }),
         { enableHighAccuracy: false, timeout: 200000, maximumAge: 1000 },
@@ -45,9 +49,10 @@ class MapWithSearchBox extends Component {
     const { latitude, longitude, title, description } = this.props.eventData.eventLocation;
     if(latitude && longitude){
     return (
+      <View style={styles.container}>
        <MapView
       provider={MapView.PROVIDER_GOOGLE}
-      style={{ flex: 1 }} region={{
+      style={styles.map} region={{
       latitude:latitude,
       longitude:longitude,
       latitudeDelta: 1,
@@ -59,26 +64,24 @@ class MapWithSearchBox extends Component {
         title={title ? title : "Your Location"} description={description ? description :""}
       />
      </MapView> 
-     
+     </View>
    )
   } else {
     return(
-      <View><Text>Loading Map...</Text></View>
+      <View style={{display:'flex',alignSelf:'center', justifyContent:'center', marginTop:200}}><Text>Loading Map...</Text></View>
     )
   }
 }
 }
 
 const styles = StyleSheet.create({
-    mapContainer: {
-      ...StyleSheet.absoluteFillObject,
-      height: 200,
-      width: 200,
-      justifyContent: 'flex-end',
-      alignItems: 'center',
-    },
-    map:{
-		...StyleSheet.absoluteFillObject
+  container: {
+    ...StyleSheet.absoluteFillObject,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
   },
   
   });

@@ -80,7 +80,11 @@ import * as userActions from '../actions/userActions';
             {
               text:'Create Event',
               screen:'CreateEvent'
-            }
+            },
+            // {
+            //   text:'Map',
+            //   screen:'SetEventLocation'
+            // }
           ]}
           renderItem={({ item }) => (
             <TouchableOpacity>
